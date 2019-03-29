@@ -1,0 +1,8328 @@
+[
+	{
+		"name": "About this Documentation",
+		"subitems": [
+			{
+				"name": "Contributing"
+			},
+			{
+				"name": "Stability Index"
+			},
+			{
+				"name": "JSON Output"
+			},
+			{
+				"name": "Syscalls and man pages"
+			}
+		]
+	},
+	{
+		"name": "Usage",
+		"subitems": [
+			{
+				"name": "Example"
+			}
+		]
+	},
+	{
+		"name": "Assert",
+		"subitems": [
+			{
+				"name": "Class: assert.AssertionError",
+				"subitems": [
+					{
+						"name": "new assert.AssertionError(options)"
+					}
+				]
+			},
+			{
+				"name": "Strict mode"
+			},
+			{
+				"name": "Legacy mode"
+			},
+			{
+				"name": "assert(value[, message])"
+			},
+			{
+				"name": "assert.deepEqual(actual, expected[, message])"
+			},
+			{
+				"name": "assert.deepStrictEqual(actual, expected[, message])",
+				"subitems": [
+					{
+						"name": "Comparison details"
+					}
+				]
+			},
+			{
+				"name": "assert.doesNotReject(asyncFn[, error][, message])"
+			},
+			{
+				"name": "assert.doesNotThrow(fn[, error][, message])"
+			},
+			{
+				"name": "assert.equal(actual, expected[, message])"
+			},
+			{
+				"name": "assert.fail([message])"
+			},
+			{
+				"name": "assert.fail(actual, expected[, message[, operator[, stackStartFn]]])"
+			},
+			{
+				"name": "assert.ifError(value)"
+			},
+			{
+				"name": "assert.notDeepEqual(actual, expected[, message])"
+			},
+			{
+				"name": "assert.notDeepStrictEqual(actual, expected[, message])"
+			},
+			{
+				"name": "assert.notEqual(actual, expected[, message])"
+			},
+			{
+				"name": "assert.notStrictEqual(actual, expected[, message])"
+			},
+			{
+				"name": "assert.ok(value[, message])"
+			},
+			{
+				"name": "assert.rejects(asyncFn[, error][, message])"
+			},
+			{
+				"name": "assert.strictEqual(actual, expected[, message])"
+			},
+			{
+				"name": "assert.throws(fn[, error][, message])"
+			}
+		]
+	},
+	{
+		"name": "Async Hooks",
+		"subitems": [
+			{
+				"name": "Terminology"
+			},
+			{
+				"name": "Public API",
+				"subitems": [
+					{
+						"name": "Overview",
+						"subitems": [
+							{
+								"name": "async_hooks.createHook(callbacks)",
+								"subitems": [
+									{
+										"name": "Error Handling"
+									},
+									{
+										"name": "Printing in AsyncHooks callbacks"
+									}
+								]
+							},
+							{
+								"name": "asyncHook.enable()"
+							},
+							{
+								"name": "asyncHook.disable()"
+							},
+							{
+								"name": "Hook Callbacks",
+								"subitems": [
+									{
+										"name": "init(asyncId, type, triggerAsyncId, resource)",
+										"subitems": [
+											{
+												"name": "type"
+											},
+											{
+												"name": "triggerAsyncId"
+											},
+											{
+												"name": "resource"
+											},
+											{
+												"name": "Asynchronous context example"
+											}
+										]
+									},
+									{
+										"name": "before(asyncId)"
+									},
+									{
+										"name": "after(asyncId)"
+									},
+									{
+										"name": "destroy(asyncId)"
+									},
+									{
+										"name": "promiseResolve(asyncId)"
+									}
+								]
+							},
+							{
+								"name": "async_hooks.executionAsyncId()"
+							},
+							{
+								"name": "async_hooks.triggerAsyncId()"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Promise execution tracking"
+			},
+			{
+				"name": "JavaScript Embedder API",
+				"subitems": [
+					{
+						"name": "Class: AsyncResource",
+						"subitems": [
+							{
+								"name": "new AsyncResource(type[, options])"
+							},
+							{
+								"name": "asyncResource.runInAsyncScope(fn[, thisArg, ...args])"
+							},
+							{
+								"name": "asyncResource.emitBefore()"
+							},
+							{
+								"name": "asyncResource.emitAfter()"
+							},
+							{
+								"name": "asyncResource.emitDestroy()"
+							},
+							{
+								"name": "asyncResource.asyncId()"
+							},
+							{
+								"name": "asyncResource.triggerAsyncId()"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Buffer",
+		"subitems": [
+			{
+				"name": "Buffer.from(), Buffer.alloc(), and Buffer.allocUnsafe()",
+				"subitems": [
+					{
+						"name": "The --zero-fill-buffers command line option"
+					},
+					{
+						"name": "What makes Buffer.allocUnsafe() and Buffer.allocUnsafeSlow() \"unsafe\"?"
+					}
+				]
+			},
+			{
+				"name": "Buffers and Character Encodings"
+			},
+			{
+				"name": "Buffers and TypedArray"
+			},
+			{
+				"name": "Buffers and iteration"
+			},
+			{
+				"name": "Class: Buffer",
+				"subitems": [
+					{
+						"name": "new Buffer(array)"
+					},
+					{
+						"name": "new Buffer(arrayBuffer[, byteOffset[, length]])"
+					},
+					{
+						"name": "new Buffer(buffer)"
+					},
+					{
+						"name": "new Buffer(size)"
+					},
+					{
+						"name": "new Buffer(string[, encoding])"
+					},
+					{
+						"name": "Class Method: Buffer.alloc(size[, fill[, encoding]])"
+					},
+					{
+						"name": "Class Method: Buffer.allocUnsafe(size)"
+					},
+					{
+						"name": "Class Method: Buffer.allocUnsafeSlow(size)"
+					},
+					{
+						"name": "Class Method: Buffer.byteLength(string[, encoding])"
+					},
+					{
+						"name": "Class Method: Buffer.compare(buf1, buf2)"
+					},
+					{
+						"name": "Class Method: Buffer.concat(list[, totalLength])"
+					},
+					{
+						"name": "Class Method: Buffer.from(array)"
+					},
+					{
+						"name": "Class Method: Buffer.from(arrayBuffer[, byteOffset[, length]])"
+					},
+					{
+						"name": "Class Method: Buffer.from(buffer)"
+					},
+					{
+						"name": "Class Method: Buffer.from(object[, offsetOrEncoding[, length]])"
+					},
+					{
+						"name": "Class Method: Buffer.from(string[, encoding])"
+					},
+					{
+						"name": "Class Method: Buffer.isBuffer(obj)"
+					},
+					{
+						"name": "Class Method: Buffer.isEncoding(encoding)"
+					},
+					{
+						"name": "Class Property: Buffer.poolSize"
+					},
+					{
+						"name": "buf[index]"
+					},
+					{
+						"name": "buf.buffer"
+					},
+					{
+						"name": "buf.byteOffset"
+					},
+					{
+						"name": "buf.compare(target[, targetStart[, targetEnd[, sourceStart[, sourceEnd]]]])"
+					},
+					{
+						"name": "buf.copy(target[, targetStart[, sourceStart[, sourceEnd]]])"
+					},
+					{
+						"name": "buf.entries()"
+					},
+					{
+						"name": "buf.equals(otherBuffer)"
+					},
+					{
+						"name": "buf.fill(value[, offset[, end]][, encoding])"
+					},
+					{
+						"name": "buf.includes(value[, byteOffset][, encoding])"
+					},
+					{
+						"name": "buf.indexOf(value[, byteOffset][, encoding])"
+					},
+					{
+						"name": "buf.keys()"
+					},
+					{
+						"name": "buf.lastIndexOf(value[, byteOffset][, encoding])"
+					},
+					{
+						"name": "buf.length"
+					},
+					{
+						"name": "buf.parent"
+					},
+					{
+						"name": "buf.readDoubleBE(offset)"
+					},
+					{
+						"name": "buf.readDoubleLE(offset)"
+					},
+					{
+						"name": "buf.readFloatBE(offset)"
+					},
+					{
+						"name": "buf.readFloatLE(offset)"
+					},
+					{
+						"name": "buf.readInt8(offset)"
+					},
+					{
+						"name": "buf.readInt16BE(offset)"
+					},
+					{
+						"name": "buf.readInt16LE(offset)"
+					},
+					{
+						"name": "buf.readInt32BE(offset)"
+					},
+					{
+						"name": "buf.readInt32LE(offset)"
+					},
+					{
+						"name": "buf.readIntBE(offset, byteLength)"
+					},
+					{
+						"name": "buf.readIntLE(offset, byteLength)"
+					},
+					{
+						"name": "buf.readUInt8(offset)"
+					},
+					{
+						"name": "buf.readUInt16BE(offset)"
+					},
+					{
+						"name": "buf.readUInt16LE(offset)"
+					},
+					{
+						"name": "buf.readUInt32BE(offset)"
+					},
+					{
+						"name": "buf.readUInt32LE(offset)"
+					},
+					{
+						"name": "buf.readUIntBE(offset, byteLength)"
+					},
+					{
+						"name": "buf.readUIntLE(offset, byteLength)"
+					},
+					{
+						"name": "buf.slice([start[, end]])"
+					},
+					{
+						"name": "buf.swap16()"
+					},
+					{
+						"name": "buf.swap32()"
+					},
+					{
+						"name": "buf.swap64()"
+					},
+					{
+						"name": "buf.toJSON()"
+					},
+					{
+						"name": "buf.toString([encoding[, start[, end]]])"
+					},
+					{
+						"name": "buf.values()"
+					},
+					{
+						"name": "buf.write(string[, offset[, length]][, encoding])"
+					},
+					{
+						"name": "buf.writeDoubleBE(value, offset)"
+					},
+					{
+						"name": "buf.writeDoubleLE(value, offset)"
+					},
+					{
+						"name": "buf.writeFloatBE(value, offset)"
+					},
+					{
+						"name": "buf.writeFloatLE(value, offset)"
+					},
+					{
+						"name": "buf.writeInt8(value, offset)"
+					},
+					{
+						"name": "buf.writeInt16BE(value, offset)"
+					},
+					{
+						"name": "buf.writeInt16LE(value, offset)"
+					},
+					{
+						"name": "buf.writeInt32BE(value, offset)"
+					},
+					{
+						"name": "buf.writeInt32LE(value, offset)"
+					},
+					{
+						"name": "buf.writeIntBE(value, offset, byteLength)"
+					},
+					{
+						"name": "buf.writeIntLE(value, offset, byteLength)"
+					},
+					{
+						"name": "buf.writeUInt8(value, offset)"
+					},
+					{
+						"name": "buf.writeUInt16BE(value, offset)"
+					},
+					{
+						"name": "buf.writeUInt16LE(value, offset)"
+					},
+					{
+						"name": "buf.writeUInt32BE(value, offset)"
+					},
+					{
+						"name": "buf.writeUInt32LE(value, offset)"
+					},
+					{
+						"name": "buf.writeUIntBE(value, offset, byteLength)"
+					},
+					{
+						"name": "buf.writeUIntLE(value, offset, byteLength)"
+					}
+				]
+			},
+			{
+				"name": "buffer.INSPECT_MAX_BYTES"
+			},
+			{
+				"name": "buffer.kMaxLength"
+			},
+			{
+				"name": "buffer.transcode(source, fromEnc, toEnc)"
+			},
+			{
+				"name": "Class: SlowBuffer",
+				"subitems": [
+					{
+						"name": "new SlowBuffer(size)"
+					}
+				]
+			},
+			{
+				"name": "Buffer Constants",
+				"subitems": [
+					{
+						"name": "buffer.constants.MAX_LENGTH"
+					},
+					{
+						"name": "buffer.constants.MAX_STRING_LENGTH"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "C++ Addons",
+		"subitems": [
+			{
+				"name": "Hello world",
+				"subitems": [
+					{
+						"name": "Context-aware addons",
+						"subitems": [
+							{
+								"name": "Worker support"
+							}
+						]
+					},
+					{
+						"name": "Building"
+					},
+					{
+						"name": "Linking to Node.js' own dependencies"
+					},
+					{
+						"name": "Loading Addons using require()"
+					}
+				]
+			},
+			{
+				"name": "Native Abstractions for Node.js"
+			},
+			{
+				"name": "N-API"
+			},
+			{
+				"name": "Addon examples",
+				"subitems": [
+					{
+						"name": "Function arguments"
+					},
+					{
+						"name": "Callbacks"
+					},
+					{
+						"name": "Object factory"
+					},
+					{
+						"name": "Function factory"
+					},
+					{
+						"name": "Wrapping C++ objects"
+					},
+					{
+						"name": "Factory of wrapped objects"
+					},
+					{
+						"name": "Passing wrapped objects around"
+					},
+					{
+						"name": "AtExit hooks",
+						"subitems": [
+							{
+								"name": "void AtExit(callback, args)"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "N-API",
+		"subitems": [
+			{
+				"name": "Implications of ABI Stability"
+			},
+			{
+				"name": "Usage"
+			},
+			{
+				"name": "N-API Version Matrix"
+			},
+			{
+				"name": "Basic N-API Data Types",
+				"subitems": [
+					{
+						"name": "napi_status"
+					},
+					{
+						"name": "napi_extended_error_info"
+					},
+					{
+						"name": "napi_env"
+					},
+					{
+						"name": "napi_value"
+					},
+					{
+						"name": "napi_threadsafe_function"
+					},
+					{
+						"name": "napi_threadsafe_function_release_mode"
+					},
+					{
+						"name": "napi_threadsafe_function_call_mode"
+					},
+					{
+						"name": "N-API Memory Management types",
+						"subitems": [
+							{
+								"name": "napi_handle_scope"
+							},
+							{
+								"name": "napi_escapable_handle_scope"
+							},
+							{
+								"name": "napi_ref"
+							}
+						]
+					},
+					{
+						"name": "N-API Callback types",
+						"subitems": [
+							{
+								"name": "napi_callback_info"
+							},
+							{
+								"name": "napi_callback"
+							},
+							{
+								"name": "napi_finalize"
+							},
+							{
+								"name": "napi_async_execute_callback"
+							},
+							{
+								"name": "napi_async_complete_callback"
+							},
+							{
+								"name": "napi_threadsafe_function_call_js"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Error Handling",
+				"subitems": [
+					{
+						"name": "Return values",
+						"subitems": [
+							{
+								"name": "napi_get_last_error_info"
+							}
+						]
+					},
+					{
+						"name": "Exceptions",
+						"subitems": [
+							{
+								"name": "napi_throw"
+							},
+							{
+								"name": "napi_throw_error"
+							},
+							{
+								"name": "napi_throw_type_error"
+							},
+							{
+								"name": "napi_throw_range_error"
+							},
+							{
+								"name": "napi_is_error"
+							},
+							{
+								"name": "napi_create_error"
+							},
+							{
+								"name": "napi_create_type_error"
+							},
+							{
+								"name": "napi_create_range_error"
+							},
+							{
+								"name": "napi_get_and_clear_last_exception"
+							},
+							{
+								"name": "napi_is_exception_pending"
+							},
+							{
+								"name": "napi_fatal_exception"
+							}
+						]
+					},
+					{
+						"name": "Fatal Errors",
+						"subitems": [
+							{
+								"name": "napi_fatal_error"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Object Lifetime management",
+				"subitems": [
+					{
+						"name": "Making handle lifespan shorter than that of the native method",
+						"subitems": [
+							{
+								"name": "napi_open_handle_scope"
+							},
+							{
+								"name": "napi_close_handle_scope"
+							},
+							{
+								"name": "napi_open_escapable_handle_scope"
+							},
+							{
+								"name": "napi_close_escapable_handle_scope"
+							},
+							{
+								"name": "napi_escape_handle"
+							}
+						]
+					},
+					{
+						"name": "References to objects with a lifespan longer than that of the native method",
+						"subitems": [
+							{
+								"name": "napi_create_reference"
+							},
+							{
+								"name": "napi_delete_reference"
+							},
+							{
+								"name": "napi_reference_ref"
+							},
+							{
+								"name": "napi_reference_unref"
+							},
+							{
+								"name": "napi_get_reference_value"
+							}
+						]
+					},
+					{
+						"name": "Cleanup on exit of the current Node.js instance",
+						"subitems": [
+							{
+								"name": "napi_add_env_cleanup_hook"
+							},
+							{
+								"name": "napi_remove_env_cleanup_hook"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Module registration"
+			},
+			{
+				"name": "Working with JavaScript Values",
+				"subitems": [
+					{
+						"name": "Enum types",
+						"subitems": [
+							{
+								"name": "napi_valuetype"
+							},
+							{
+								"name": "napi_typedarray_type"
+							}
+						]
+					},
+					{
+						"name": "Object Creation Functions",
+						"subitems": [
+							{
+								"name": "napi_create_array"
+							},
+							{
+								"name": "napi_create_array_with_length"
+							},
+							{
+								"name": "napi_create_arraybuffer"
+							},
+							{
+								"name": "napi_create_buffer"
+							},
+							{
+								"name": "napi_create_buffer_copy"
+							},
+							{
+								"name": "napi_create_date"
+							},
+							{
+								"name": "napi_create_external"
+							},
+							{
+								"name": "napi_create_external_arraybuffer"
+							},
+							{
+								"name": "napi_create_external_buffer"
+							},
+							{
+								"name": "napi_create_object"
+							},
+							{
+								"name": "napi_create_symbol"
+							},
+							{
+								"name": "napi_create_typedarray"
+							},
+							{
+								"name": "napi_create_dataview"
+							}
+						]
+					},
+					{
+						"name": "Functions to convert from C types to N-API",
+						"subitems": [
+							{
+								"name": "napi_create_int32"
+							},
+							{
+								"name": "napi_create_uint32"
+							},
+							{
+								"name": "napi_create_int64"
+							},
+							{
+								"name": "napi_create_double"
+							},
+							{
+								"name": "napi_create_bigint_int64"
+							},
+							{
+								"name": "napi_create_bigint_uint64"
+							},
+							{
+								"name": "napi_create_bigint_words"
+							},
+							{
+								"name": "napi_create_string_latin1"
+							},
+							{
+								"name": "napi_create_string_utf16"
+							},
+							{
+								"name": "napi_create_string_utf8"
+							}
+						]
+					},
+					{
+						"name": "Functions to convert from N-API to C types",
+						"subitems": [
+							{
+								"name": "napi_get_array_length"
+							},
+							{
+								"name": "napi_get_arraybuffer_info"
+							},
+							{
+								"name": "napi_get_buffer_info"
+							},
+							{
+								"name": "napi_get_prototype"
+							},
+							{
+								"name": "napi_get_typedarray_info"
+							},
+							{
+								"name": "napi_get_dataview_info"
+							},
+							{
+								"name": "napi_get_date_value"
+							},
+							{
+								"name": "napi_get_value_bool"
+							},
+							{
+								"name": "napi_get_value_double"
+							},
+							{
+								"name": "napi_get_value_bigint_int64"
+							},
+							{
+								"name": "napi_get_value_bigint_uint64"
+							},
+							{
+								"name": "napi_get_value_bigint_words"
+							},
+							{
+								"name": "napi_get_value_external"
+							},
+							{
+								"name": "napi_get_value_int32"
+							},
+							{
+								"name": "napi_get_value_int64"
+							},
+							{
+								"name": "napi_get_value_string_latin1"
+							},
+							{
+								"name": "napi_get_value_string_utf8"
+							},
+							{
+								"name": "napi_get_value_string_utf16"
+							},
+							{
+								"name": "napi_get_value_uint32"
+							}
+						]
+					},
+					{
+						"name": "Functions to get global instances",
+						"subitems": [
+							{
+								"name": "napi_get_boolean"
+							},
+							{
+								"name": "napi_get_global"
+							},
+							{
+								"name": "napi_get_null"
+							},
+							{
+								"name": "napi_get_undefined"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Working with JavaScript Values - Abstract Operations",
+				"subitems": [
+					{
+						"name": "napi_coerce_to_bool"
+					},
+					{
+						"name": "napi_coerce_to_number"
+					},
+					{
+						"name": "napi_coerce_to_object"
+					},
+					{
+						"name": "napi_coerce_to_string"
+					},
+					{
+						"name": "napi_typeof"
+					},
+					{
+						"name": "napi_instanceof"
+					},
+					{
+						"name": "napi_is_array"
+					},
+					{
+						"name": "napi_is_arraybuffer"
+					},
+					{
+						"name": "napi_is_buffer"
+					},
+					{
+						"name": "napi_is_date"
+					},
+					{
+						"name": "napi_is_error"
+					},
+					{
+						"name": "napi_is_typedarray"
+					},
+					{
+						"name": "napi_is_dataview"
+					},
+					{
+						"name": "napi_strict_equals"
+					}
+				]
+			},
+			{
+				"name": "Working with JavaScript Properties",
+				"subitems": [
+					{
+						"name": "Structures",
+						"subitems": [
+							{
+								"name": "napi_property_attributes"
+							},
+							{
+								"name": "napi_property_descriptor"
+							}
+						]
+					},
+					{
+						"name": "Functions",
+						"subitems": [
+							{
+								"name": "napi_get_property_names"
+							},
+							{
+								"name": "napi_set_property"
+							},
+							{
+								"name": "napi_get_property"
+							},
+							{
+								"name": "napi_has_property"
+							},
+							{
+								"name": "napi_delete_property"
+							},
+							{
+								"name": "napi_has_own_property"
+							},
+							{
+								"name": "napi_set_named_property"
+							},
+							{
+								"name": "napi_get_named_property"
+							},
+							{
+								"name": "napi_has_named_property"
+							},
+							{
+								"name": "napi_set_element"
+							},
+							{
+								"name": "napi_get_element"
+							},
+							{
+								"name": "napi_has_element"
+							},
+							{
+								"name": "napi_delete_element"
+							},
+							{
+								"name": "napi_define_properties"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Working with JavaScript Functions",
+				"subitems": [
+					{
+						"name": "napi_call_function"
+					},
+					{
+						"name": "napi_create_function"
+					},
+					{
+						"name": "napi_get_cb_info"
+					},
+					{
+						"name": "napi_get_new_target"
+					},
+					{
+						"name": "napi_new_instance"
+					}
+				]
+			},
+			{
+				"name": "Object Wrap",
+				"subitems": [
+					{
+						"name": "napi_define_class"
+					},
+					{
+						"name": "napi_wrap"
+					},
+					{
+						"name": "napi_unwrap"
+					},
+					{
+						"name": "napi_remove_wrap"
+					},
+					{
+						"name": "napi_add_finalizer"
+					}
+				]
+			},
+			{
+				"name": "Simple Asynchronous Operations",
+				"subitems": [
+					{
+						"name": "napi_create_async_work"
+					},
+					{
+						"name": "napi_delete_async_work"
+					},
+					{
+						"name": "napi_queue_async_work"
+					},
+					{
+						"name": "napi_cancel_async_work"
+					}
+				]
+			},
+			{
+				"name": "Custom Asynchronous Operations",
+				"subitems": [
+					{
+						"name": "napi_async_init"
+					},
+					{
+						"name": "napi_async_destroy"
+					},
+					{
+						"name": "napi_make_callback"
+					},
+					{
+						"name": "napi_open_callback_scope"
+					},
+					{
+						"name": "napi_close_callback_scope"
+					}
+				]
+			},
+			{
+				"name": "Version Management",
+				"subitems": [
+					{
+						"name": "napi_get_node_version"
+					},
+					{
+						"name": "napi_get_version"
+					}
+				]
+			},
+			{
+				"name": "Memory Management",
+				"subitems": [
+					{
+						"name": "napi_adjust_external_memory"
+					}
+				]
+			},
+			{
+				"name": "Promises",
+				"subitems": [
+					{
+						"name": "napi_create_promise"
+					},
+					{
+						"name": "napi_resolve_deferred"
+					},
+					{
+						"name": "napi_reject_deferred"
+					},
+					{
+						"name": "napi_is_promise"
+					}
+				]
+			},
+			{
+				"name": "Script execution",
+				"subitems": [
+					{
+						"name": "napi_run_script"
+					}
+				]
+			},
+			{
+				"name": "libuv event loop",
+				"subitems": [
+					{
+						"name": "napi_get_uv_event_loop"
+					}
+				]
+			},
+			{
+				"name": "Asynchronous Thread-safe Function Calls",
+				"subitems": [
+					{
+						"name": "napi_create_threadsafe_function"
+					},
+					{
+						"name": "napi_get_threadsafe_function_context"
+					},
+					{
+						"name": "napi_call_threadsafe_function"
+					},
+					{
+						"name": "napi_acquire_threadsafe_function"
+					},
+					{
+						"name": "napi_release_threadsafe_function"
+					},
+					{
+						"name": "napi_ref_threadsafe_function"
+					},
+					{
+						"name": "napi_unref_threadsafe_function"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Child Process",
+		"subitems": [
+			{
+				"name": "Asynchronous Process Creation",
+				"subitems": [
+					{
+						"name": "Spawning .bat and .cmd files on Windows"
+					},
+					{
+						"name": "child_process.exec(command[, options][, callback])"
+					},
+					{
+						"name": "child_process.execFile(file[, args][, options][, callback])"
+					},
+					{
+						"name": "child_process.fork(modulePath[, args][, options])"
+					},
+					{
+						"name": "child_process.spawn(command[, args][, options])",
+						"subitems": [
+							{
+								"name": "options.detached"
+							},
+							{
+								"name": "options.stdio"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Synchronous Process Creation",
+				"subitems": [
+					{
+						"name": "child_process.execFileSync(file[, args][, options])"
+					},
+					{
+						"name": "child_process.execSync(command[, options])"
+					},
+					{
+						"name": "child_process.spawnSync(command[, args][, options])"
+					}
+				]
+			},
+			{
+				"name": "Class: ChildProcess",
+				"subitems": [
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'disconnect'"
+					},
+					{
+						"name": "Event: 'error'"
+					},
+					{
+						"name": "Event: 'exit'"
+					},
+					{
+						"name": "Event: 'message'"
+					},
+					{
+						"name": "subprocess.channel"
+					},
+					{
+						"name": "subprocess.connected"
+					},
+					{
+						"name": "subprocess.disconnect()"
+					},
+					{
+						"name": "subprocess.kill([signal])"
+					},
+					{
+						"name": "subprocess.killed"
+					},
+					{
+						"name": "subprocess.pid"
+					},
+					{
+						"name": "subprocess.ref()"
+					},
+					{
+						"name": "subprocess.send(message[, sendHandle[, options]][, callback])",
+						"subitems": [
+							{
+								"name": "Example: sending a server object"
+							},
+							{
+								"name": "Example: sending a socket object"
+							}
+						]
+					},
+					{
+						"name": "subprocess.stderr"
+					},
+					{
+						"name": "subprocess.stdin"
+					},
+					{
+						"name": "subprocess.stdio"
+					},
+					{
+						"name": "subprocess.stdout"
+					},
+					{
+						"name": "subprocess.unref()"
+					}
+				]
+			},
+			{
+				"name": "maxBuffer and Unicode"
+			},
+			{
+				"name": "Shell Requirements"
+			},
+			{
+				"name": "Default Windows Shell"
+			}
+		]
+	},
+	{
+		"name": "Cluster",
+		"subitems": [
+			{
+				"name": "How It Works"
+			},
+			{
+				"name": "Class: Worker",
+				"subitems": [
+					{
+						"name": "Event: 'disconnect'"
+					},
+					{
+						"name": "Event: 'error'"
+					},
+					{
+						"name": "Event: 'exit'"
+					},
+					{
+						"name": "Event: 'listening'"
+					},
+					{
+						"name": "Event: 'message'"
+					},
+					{
+						"name": "Event: 'online'"
+					},
+					{
+						"name": "worker.disconnect()"
+					},
+					{
+						"name": "worker.exitedAfterDisconnect"
+					},
+					{
+						"name": "worker.id"
+					},
+					{
+						"name": "worker.isConnected()"
+					},
+					{
+						"name": "worker.isDead()"
+					},
+					{
+						"name": "worker.kill([signal='SIGTERM'])"
+					},
+					{
+						"name": "worker.process"
+					},
+					{
+						"name": "worker.send(message[, sendHandle][, callback])"
+					}
+				]
+			},
+			{
+				"name": "Event: 'disconnect'"
+			},
+			{
+				"name": "Event: 'exit'"
+			},
+			{
+				"name": "Event: 'fork'"
+			},
+			{
+				"name": "Event: 'listening'"
+			},
+			{
+				"name": "Event: 'message'"
+			},
+			{
+				"name": "Event: 'online'"
+			},
+			{
+				"name": "Event: 'setup'"
+			},
+			{
+				"name": "cluster.disconnect([callback])"
+			},
+			{
+				"name": "cluster.fork([env])"
+			},
+			{
+				"name": "cluster.isMaster"
+			},
+			{
+				"name": "cluster.isWorker"
+			},
+			{
+				"name": "cluster.schedulingPolicy"
+			},
+			{
+				"name": "cluster.settings"
+			},
+			{
+				"name": "cluster.setupMaster([settings])"
+			},
+			{
+				"name": "cluster.worker"
+			},
+			{
+				"name": "cluster.workers"
+			}
+		]
+	},
+	{
+		"name": "Command Line Options",
+		"subitems": [
+			{
+				"name": "Synopsis"
+			},
+			{
+				"name": "Options",
+				"subitems": [
+					{
+						"name": "-"
+					},
+					{
+						"name": "--"
+					},
+					{
+						"name": "--abort-on-uncaught-exception"
+					},
+					{
+						"name": "--completion-bash"
+					},
+					{
+						"name": "--diagnostic-report-directory=directory"
+					},
+					{
+						"name": "--diagnostic-report-filename=filename"
+					},
+					{
+						"name": "--diagnostic-report-on-fatalerror"
+					},
+					{
+						"name": "--diagnostic-report-on-signal"
+					},
+					{
+						"name": "--diagnostic-report-signal=signal"
+					},
+					{
+						"name": "--diagnostic-report-uncaught-exception"
+					},
+					{
+						"name": "--enable-fips"
+					},
+					{
+						"name": "--experimental-modules"
+					},
+					{
+						"name": "--experimental-policy"
+					},
+					{
+						"name": "--experimental-repl-await"
+					},
+					{
+						"name": "--experimental-report"
+					},
+					{
+						"name": "--experimental-vm-modules"
+					},
+					{
+						"name": "--force-fips"
+					},
+					{
+						"name": "--frozen-intrinsics"
+					},
+					{
+						"name": "--http-parser=library"
+					},
+					{
+						"name": "--icu-data-dir=file"
+					},
+					{
+						"name": "--inspect-brk[=[host:]port]"
+					},
+					{
+						"name": "--inspect-port=[host:]port"
+					},
+					{
+						"name": "--inspect[=[host:]port]",
+						"subitems": [
+							{
+								"name": "Warning: binding inspector to a public IP:port combination is insecure"
+							}
+						]
+					},
+					{
+						"name": "--loader=file"
+					},
+					{
+						"name": "--max-http-header-size=size"
+					},
+					{
+						"name": "--napi-modules"
+					},
+					{
+						"name": "--no-deprecation"
+					},
+					{
+						"name": "--no-force-async-hooks-checks"
+					},
+					{
+						"name": "--no-warnings"
+					},
+					{
+						"name": "--openssl-config=file"
+					},
+					{
+						"name": "--pending-deprecation"
+					},
+					{
+						"name": "--preserve-symlinks"
+					},
+					{
+						"name": "--preserve-symlinks-main"
+					},
+					{
+						"name": "--prof"
+					},
+					{
+						"name": "--prof-process"
+					},
+					{
+						"name": "--redirect-warnings=file"
+					},
+					{
+						"name": "--throw-deprecation"
+					},
+					{
+						"name": "--title=title"
+					},
+					{
+						"name": "--tls-cipher-list=list"
+					},
+					{
+						"name": "--trace-deprecation"
+					},
+					{
+						"name": "--trace-event-categories"
+					},
+					{
+						"name": "--trace-event-file-pattern"
+					},
+					{
+						"name": "--trace-events-enabled"
+					},
+					{
+						"name": "--trace-sync-io"
+					},
+					{
+						"name": "--trace-warnings"
+					},
+					{
+						"name": "--track-heap-objects"
+					},
+					{
+						"name": "--use-bundled-ca, --use-openssl-ca"
+					},
+					{
+						"name": "--v8-options"
+					},
+					{
+						"name": "--v8-pool-size=num"
+					},
+					{
+						"name": "--zero-fill-buffers"
+					},
+					{
+						"name": "-c, --check"
+					},
+					{
+						"name": "-e, --eval \"script\""
+					},
+					{
+						"name": "-h, --help"
+					},
+					{
+						"name": "-i, --interactive"
+					},
+					{
+						"name": "-p, --print \"script\""
+					},
+					{
+						"name": "-r, --require module"
+					},
+					{
+						"name": "-v, --version"
+					}
+				]
+			},
+			{
+				"name": "Environment Variables",
+				"subitems": [
+					{
+						"name": "NODE_DEBUG=module[,…]"
+					},
+					{
+						"name": "NODE_DEBUG_NATIVE=module[,…]"
+					},
+					{
+						"name": "NODE_DISABLE_COLORS=1"
+					},
+					{
+						"name": "NODE_EXTRA_CA_CERTS=file"
+					},
+					{
+						"name": "NODE_ICU_DATA=file"
+					},
+					{
+						"name": "NODE_NO_WARNINGS=1"
+					},
+					{
+						"name": "NODE_OPTIONS=options..."
+					},
+					{
+						"name": "NODE_PATH=path[:…]"
+					},
+					{
+						"name": "NODE_PENDING_DEPRECATION=1"
+					},
+					{
+						"name": "NODE_PENDING_PIPE_INSTANCES=instances"
+					},
+					{
+						"name": "NODE_PRESERVE_SYMLINKS=1"
+					},
+					{
+						"name": "NODE_REDIRECT_WARNINGS=file"
+					},
+					{
+						"name": "NODE_REPL_HISTORY=file"
+					},
+					{
+						"name": "NODE_TLS_REJECT_UNAUTHORIZED=value"
+					},
+					{
+						"name": "NODE_V8_COVERAGE=dir"
+					},
+					{
+						"name": "OPENSSL_CONF=file"
+					},
+					{
+						"name": "SSL_CERT_DIR=dir"
+					},
+					{
+						"name": "SSL_CERT_FILE=file"
+					},
+					{
+						"name": "UV_THREADPOOL_SIZE=size"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Console",
+		"subitems": [
+			{
+				"name": "Class: Console",
+				"subitems": [
+					{
+						"name": "new Console(stdout[, stderr][, ignoreErrors])"
+					},
+					{
+						"name": "new Console(options)"
+					},
+					{
+						"name": "console.assert(value[, ...message])"
+					},
+					{
+						"name": "console.clear()"
+					},
+					{
+						"name": "console.count([label])"
+					},
+					{
+						"name": "console.countReset([label])"
+					},
+					{
+						"name": "console.debug(data[, ...args])"
+					},
+					{
+						"name": "console.dir(obj[, options])"
+					},
+					{
+						"name": "console.dirxml(...data)"
+					},
+					{
+						"name": "console.error([data][, ...args])"
+					},
+					{
+						"name": "console.group([...label])"
+					},
+					{
+						"name": "console.groupCollapsed()"
+					},
+					{
+						"name": "console.groupEnd()"
+					},
+					{
+						"name": "console.info([data][, ...args])"
+					},
+					{
+						"name": "console.log([data][, ...args])"
+					},
+					{
+						"name": "console.table(tabularData[, properties])"
+					},
+					{
+						"name": "console.time([label])"
+					},
+					{
+						"name": "console.timeEnd([label])"
+					},
+					{
+						"name": "console.timeLog([label][, ...data])"
+					},
+					{
+						"name": "console.trace([message][, ...args])"
+					},
+					{
+						"name": "console.warn([data][, ...args])"
+					}
+				]
+			},
+			{
+				"name": "Inspector only methods",
+				"subitems": [
+					{
+						"name": "console.markTimeline([label])"
+					},
+					{
+						"name": "console.profile([label])"
+					},
+					{
+						"name": "console.profileEnd([label])"
+					},
+					{
+						"name": "console.timeStamp([label])"
+					},
+					{
+						"name": "console.timeline([label])"
+					},
+					{
+						"name": "console.timelineEnd([label])"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Crypto",
+		"subitems": [
+			{
+				"name": "Determining if crypto support is unavailable"
+			},
+			{
+				"name": "Class: Certificate",
+				"subitems": [
+					{
+						"name": "Certificate.exportChallenge(spkac)"
+					},
+					{
+						"name": "Certificate.exportPublicKey(spkac[, encoding])"
+					},
+					{
+						"name": "Certificate.verifySpkac(spkac)"
+					},
+					{
+						"name": "Legacy API",
+						"subitems": [
+							{
+								"name": "new crypto.Certificate()"
+							},
+							{
+								"name": "certificate.exportChallenge(spkac)"
+							},
+							{
+								"name": "certificate.exportPublicKey(spkac)"
+							},
+							{
+								"name": "certificate.verifySpkac(spkac)"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Class: Cipher",
+				"subitems": [
+					{
+						"name": "cipher.final([outputEncoding])"
+					},
+					{
+						"name": "cipher.setAAD(buffer[, options])"
+					},
+					{
+						"name": "cipher.getAuthTag()"
+					},
+					{
+						"name": "cipher.setAutoPadding([autoPadding])"
+					},
+					{
+						"name": "cipher.update(data[, inputEncoding][, outputEncoding])"
+					}
+				]
+			},
+			{
+				"name": "Class: Decipher",
+				"subitems": [
+					{
+						"name": "decipher.final([outputEncoding])"
+					},
+					{
+						"name": "decipher.setAAD(buffer[, options])"
+					},
+					{
+						"name": "decipher.setAuthTag(buffer)"
+					},
+					{
+						"name": "decipher.setAutoPadding([autoPadding])"
+					},
+					{
+						"name": "decipher.update(data[, inputEncoding][, outputEncoding])"
+					}
+				]
+			},
+			{
+				"name": "Class: DiffieHellman",
+				"subitems": [
+					{
+						"name": "diffieHellman.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])"
+					},
+					{
+						"name": "diffieHellman.generateKeys([encoding])"
+					},
+					{
+						"name": "diffieHellman.getGenerator([encoding])"
+					},
+					{
+						"name": "diffieHellman.getPrime([encoding])"
+					},
+					{
+						"name": "diffieHellman.getPrivateKey([encoding])"
+					},
+					{
+						"name": "diffieHellman.getPublicKey([encoding])"
+					},
+					{
+						"name": "diffieHellman.setPrivateKey(privateKey[, encoding])"
+					},
+					{
+						"name": "diffieHellman.setPublicKey(publicKey[, encoding])"
+					},
+					{
+						"name": "diffieHellman.verifyError"
+					}
+				]
+			},
+			{
+				"name": "Class: ECDH",
+				"subitems": [
+					{
+						"name": "Class Method: ECDH.convertKey(key, curve[, inputEncoding[, outputEncoding[, format]]])"
+					},
+					{
+						"name": "ecdh.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])"
+					},
+					{
+						"name": "ecdh.generateKeys([encoding[, format]])"
+					},
+					{
+						"name": "ecdh.getPrivateKey([encoding])"
+					},
+					{
+						"name": "ecdh.getPublicKey([encoding][, format])"
+					},
+					{
+						"name": "ecdh.setPrivateKey(privateKey[, encoding])"
+					},
+					{
+						"name": "ecdh.setPublicKey(publicKey[, encoding])"
+					}
+				]
+			},
+			{
+				"name": "Class: Hash",
+				"subitems": [
+					{
+						"name": "hash.digest([encoding])"
+					},
+					{
+						"name": "hash.update(data[, inputEncoding])"
+					}
+				]
+			},
+			{
+				"name": "Class: Hmac",
+				"subitems": [
+					{
+						"name": "hmac.digest([encoding])"
+					},
+					{
+						"name": "hmac.update(data[, inputEncoding])"
+					}
+				]
+			},
+			{
+				"name": "Class: KeyObject",
+				"subitems": [
+					{
+						"name": "keyObject.asymmetricKeyType"
+					},
+					{
+						"name": "keyObject.export([options])"
+					},
+					{
+						"name": "keyObject.symmetricKeySize"
+					},
+					{
+						"name": "keyObject.type"
+					}
+				]
+			},
+			{
+				"name": "Class: Sign",
+				"subitems": [
+					{
+						"name": "sign.sign(privateKey[, outputEncoding])"
+					},
+					{
+						"name": "sign.update(data[, inputEncoding])"
+					}
+				]
+			},
+			{
+				"name": "Class: Verify",
+				"subitems": [
+					{
+						"name": "verify.update(data[, inputEncoding])"
+					},
+					{
+						"name": "verify.verify(object, signature[, signatureEncoding])"
+					}
+				]
+			},
+			{
+				"name": "crypto module methods and properties",
+				"subitems": [
+					{
+						"name": "crypto.constants"
+					},
+					{
+						"name": "crypto.DEFAULT_ENCODING"
+					},
+					{
+						"name": "crypto.fips"
+					},
+					{
+						"name": "crypto.createCipher(algorithm, password[, options])"
+					},
+					{
+						"name": "crypto.createCipheriv(algorithm, key, iv[, options])"
+					},
+					{
+						"name": "crypto.createDecipher(algorithm, password[, options])"
+					},
+					{
+						"name": "crypto.createDecipheriv(algorithm, key, iv[, options])"
+					},
+					{
+						"name": "crypto.createDiffieHellman(prime[, primeEncoding][, generator][, generatorEncoding])"
+					},
+					{
+						"name": "crypto.createDiffieHellman(primeLength[, generator])"
+					},
+					{
+						"name": "crypto.createECDH(curveName)"
+					},
+					{
+						"name": "crypto.createHash(algorithm[, options])"
+					},
+					{
+						"name": "crypto.createHmac(algorithm, key[, options])"
+					},
+					{
+						"name": "crypto.createPrivateKey(key)"
+					},
+					{
+						"name": "crypto.createPublicKey(key)"
+					},
+					{
+						"name": "crypto.createSecretKey(key)"
+					},
+					{
+						"name": "crypto.createSign(algorithm[, options])"
+					},
+					{
+						"name": "crypto.createVerify(algorithm[, options])"
+					},
+					{
+						"name": "crypto.generateKeyPair(type, options, callback)"
+					},
+					{
+						"name": "crypto.generateKeyPairSync(type, options)"
+					},
+					{
+						"name": "crypto.getCiphers()"
+					},
+					{
+						"name": "crypto.getCurves()"
+					},
+					{
+						"name": "crypto.getDiffieHellman(groupName)"
+					},
+					{
+						"name": "crypto.getFips()"
+					},
+					{
+						"name": "crypto.getHashes()"
+					},
+					{
+						"name": "crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)"
+					},
+					{
+						"name": "crypto.pbkdf2Sync(password, salt, iterations, keylen, digest)"
+					},
+					{
+						"name": "crypto.privateDecrypt(privateKey, buffer)"
+					},
+					{
+						"name": "crypto.privateEncrypt(privateKey, buffer)"
+					},
+					{
+						"name": "crypto.publicDecrypt(key, buffer)"
+					},
+					{
+						"name": "crypto.publicEncrypt(key, buffer)"
+					},
+					{
+						"name": "crypto.randomBytes(size[, callback])"
+					},
+					{
+						"name": "crypto.randomFillSync(buffer[, offset][, size])"
+					},
+					{
+						"name": "crypto.randomFill(buffer[, offset][, size], callback)"
+					},
+					{
+						"name": "crypto.scrypt(password, salt, keylen[, options], callback)"
+					},
+					{
+						"name": "crypto.scryptSync(password, salt, keylen[, options])"
+					},
+					{
+						"name": "crypto.setEngine(engine[, flags])"
+					},
+					{
+						"name": "crypto.setFips(bool)"
+					},
+					{
+						"name": "crypto.timingSafeEqual(a, b)"
+					}
+				]
+			},
+			{
+				"name": "Notes",
+				"subitems": [
+					{
+						"name": "Legacy Streams API (pre Node.js v0.10)"
+					},
+					{
+						"name": "Recent ECDH Changes"
+					},
+					{
+						"name": "Support for weak or compromised algorithms"
+					},
+					{
+						"name": "CCM mode"
+					}
+				]
+			},
+			{
+				"name": "Crypto Constants",
+				"subitems": [
+					{
+						"name": "OpenSSL Options"
+					},
+					{
+						"name": "OpenSSL Engine Constants"
+					},
+					{
+						"name": "Other OpenSSL Constants"
+					},
+					{
+						"name": "Node.js Crypto Constants"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Debugger",
+		"subitems": [
+			{
+				"name": "Watchers"
+			},
+			{
+				"name": "Command reference",
+				"subitems": [
+					{
+						"name": "Stepping"
+					},
+					{
+						"name": "Breakpoints"
+					},
+					{
+						"name": "Information"
+					},
+					{
+						"name": "Execution control"
+					},
+					{
+						"name": "Various"
+					}
+				]
+			},
+			{
+				"name": "Advanced Usage",
+				"subitems": [
+					{
+						"name": "V8 Inspector Integration for Node.js"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Deprecated APIs",
+		"subitems": [
+			{
+				"name": "Revoking deprecations"
+			},
+			{
+				"name": "List of Deprecated APIs",
+				"subitems": [
+					{
+						"name": "DEP0001: http.OutgoingMessage.prototype.flush"
+					},
+					{
+						"name": "DEP0002: require('_linklist')"
+					},
+					{
+						"name": "DEP0003: _writableState.buffer"
+					},
+					{
+						"name": "DEP0004: CryptoStream.prototype.readyState"
+					},
+					{
+						"name": "DEP0005: Buffer() constructor"
+					},
+					{
+						"name": "DEP0006: child_process options.customFds"
+					},
+					{
+						"name": "DEP0007: Replace cluster worker.suicide with worker.exitedAfterDisconnect"
+					},
+					{
+						"name": "DEP0008: require('constants')"
+					},
+					{
+						"name": "DEP0009: crypto.pbkdf2 without digest"
+					},
+					{
+						"name": "DEP0010: crypto.createCredentials"
+					},
+					{
+						"name": "DEP0011: crypto.Credentials"
+					},
+					{
+						"name": "DEP0012: Domain.dispose"
+					},
+					{
+						"name": "DEP0013: fs asynchronous function without callback"
+					},
+					{
+						"name": "DEP0014: fs.read legacy String interface"
+					},
+					{
+						"name": "DEP0015: fs.readSync legacy String interface"
+					},
+					{
+						"name": "DEP0016: GLOBAL/root"
+					},
+					{
+						"name": "DEP0017: Intl.v8BreakIterator"
+					},
+					{
+						"name": "DEP0018: Unhandled promise rejections"
+					},
+					{
+						"name": "DEP0019: require('.') resolved outside directory"
+					},
+					{
+						"name": "DEP0020: Server.connections"
+					},
+					{
+						"name": "DEP0021: Server.listenFD"
+					},
+					{
+						"name": "DEP0022: os.tmpDir()"
+					},
+					{
+						"name": "DEP0023: os.getNetworkInterfaces()"
+					},
+					{
+						"name": "DEP0024: REPLServer.prototype.convertToContext()"
+					},
+					{
+						"name": "DEP0025: require('sys')"
+					},
+					{
+						"name": "DEP0026: util.print()"
+					},
+					{
+						"name": "DEP0027: util.puts()"
+					},
+					{
+						"name": "DEP0028: util.debug()"
+					},
+					{
+						"name": "DEP0029: util.error()"
+					},
+					{
+						"name": "DEP0030: SlowBuffer"
+					},
+					{
+						"name": "DEP0031: ecdh.setPublicKey()"
+					},
+					{
+						"name": "DEP0032: domain module"
+					},
+					{
+						"name": "DEP0033: EventEmitter.listenerCount()"
+					},
+					{
+						"name": "DEP0034: fs.exists(path, callback)"
+					},
+					{
+						"name": "DEP0035: fs.lchmod(path, mode, callback)"
+					},
+					{
+						"name": "DEP0036: fs.lchmodSync(path, mode)"
+					},
+					{
+						"name": "DEP0037: fs.lchown(path, uid, gid, callback)"
+					},
+					{
+						"name": "DEP0038: fs.lchownSync(path, uid, gid)"
+					},
+					{
+						"name": "DEP0039: require.extensions"
+					},
+					{
+						"name": "DEP0040: punycode module"
+					},
+					{
+						"name": "DEP0041: NODE_REPL_HISTORY_FILE environment variable"
+					},
+					{
+						"name": "DEP0042: tls.CryptoStream"
+					},
+					{
+						"name": "DEP0043: tls.SecurePair"
+					},
+					{
+						"name": "DEP0044: util.isArray()"
+					},
+					{
+						"name": "DEP0045: util.isBoolean()"
+					},
+					{
+						"name": "DEP0046: util.isBuffer()"
+					},
+					{
+						"name": "DEP0047: util.isDate()"
+					},
+					{
+						"name": "DEP0048: util.isError()"
+					},
+					{
+						"name": "DEP0049: util.isFunction()"
+					},
+					{
+						"name": "DEP0050: util.isNull()"
+					},
+					{
+						"name": "DEP0051: util.isNullOrUndefined()"
+					},
+					{
+						"name": "DEP0052: util.isNumber()"
+					},
+					{
+						"name": "DEP0053 util.isObject()"
+					},
+					{
+						"name": "DEP0054: util.isPrimitive()"
+					},
+					{
+						"name": "DEP0055: util.isRegExp()"
+					},
+					{
+						"name": "DEP0056: util.isString()"
+					},
+					{
+						"name": "DEP0057: util.isSymbol()"
+					},
+					{
+						"name": "DEP0058: util.isUndefined()"
+					},
+					{
+						"name": "DEP0059: util.log()"
+					},
+					{
+						"name": "DEP0060: util._extend()"
+					},
+					{
+						"name": "DEP0061: fs.SyncWriteStream"
+					},
+					{
+						"name": "DEP0062: node --debug"
+					},
+					{
+						"name": "DEP0063: ServerResponse.prototype.writeHeader()"
+					},
+					{
+						"name": "DEP0064: tls.createSecurePair()"
+					},
+					{
+						"name": "DEP0065: repl.REPL_MODE_MAGIC and NODE_REPL_MODE=magic"
+					},
+					{
+						"name": "DEP0066: outgoingMessage._headers, outgoingMessage._headerNames"
+					},
+					{
+						"name": "DEP0067: OutgoingMessage.prototype._renderHeaders"
+					},
+					{
+						"name": "DEP0068: node debug"
+					},
+					{
+						"name": "DEP0069: vm.runInDebugContext(string)"
+					},
+					{
+						"name": "DEP0070: async_hooks.currentId()"
+					},
+					{
+						"name": "DEP0071: async_hooks.triggerId()"
+					},
+					{
+						"name": "DEP0072: async_hooks.AsyncResource.triggerId()"
+					},
+					{
+						"name": "DEP0073: Several internal properties of net.Server"
+					},
+					{
+						"name": "DEP0074: REPLServer.bufferedCommand"
+					},
+					{
+						"name": "DEP0075: REPLServer.parseREPLKeyword()"
+					},
+					{
+						"name": "DEP0076: tls.parseCertString()"
+					},
+					{
+						"name": "DEP0077: Module._debug()"
+					},
+					{
+						"name": "DEP0078: REPLServer.turnOffEditorMode()"
+					},
+					{
+						"name": "DEP0079: Custom inspection function on Objects via .inspect()"
+					},
+					{
+						"name": "DEP0080: path._makeLong()"
+					},
+					{
+						"name": "DEP0081: fs.truncate() using a file descriptor"
+					},
+					{
+						"name": "DEP0082: REPLServer.prototype.memory()"
+					},
+					{
+						"name": "DEP0083: Disabling ECDH by setting ecdhCurve to false"
+					},
+					{
+						"name": "DEP0084: requiring bundled internal dependencies"
+					},
+					{
+						"name": "DEP0085: AsyncHooks Sensitive API"
+					},
+					{
+						"name": "DEP0086: Remove runInAsyncIdScope"
+					},
+					{
+						"name": "DEP0089: require('assert')"
+					},
+					{
+						"name": "DEP0090: Invalid GCM authentication tag lengths"
+					},
+					{
+						"name": "DEP0091: crypto.DEFAULT_ENCODING"
+					},
+					{
+						"name": "DEP0092: Top-level this bound to module.exports"
+					},
+					{
+						"name": "DEP0093: crypto.fips is deprecated and replaced."
+					},
+					{
+						"name": "DEP0094: Using assert.fail() with more than one argument."
+					},
+					{
+						"name": "DEP0095: timers.enroll()"
+					},
+					{
+						"name": "DEP0096: timers.unenroll()"
+					},
+					{
+						"name": "DEP0097: MakeCallback with domain property"
+					},
+					{
+						"name": "DEP0098: AsyncHooks Embedder AsyncResource.emitBefore and AsyncResource.emitAfter APIs"
+					},
+					{
+						"name": "DEP0099: async context-unaware node::MakeCallback C++ APIs"
+					},
+					{
+						"name": "DEP0100: process.assert()"
+					},
+					{
+						"name": "DEP0101: --with-lttng"
+					},
+					{
+						"name": "DEP0102: Using noAssert in Buffer#(read|write) operations."
+					},
+					{
+						"name": "DEP0103: process.binding('util').is[...] typechecks"
+					},
+					{
+						"name": "DEP0104: process.env string coercion"
+					},
+					{
+						"name": "DEP0105: decipher.finaltol"
+					},
+					{
+						"name": "DEP0106: crypto.createCipher and crypto.createDecipher"
+					},
+					{
+						"name": "DEP0107: tls.convertNPNProtocols()"
+					},
+					{
+						"name": "DEP0108: zlib.bytesRead"
+					},
+					{
+						"name": "DEP0109: http, https, and tls support for invalid URLs"
+					},
+					{
+						"name": "DEP0110: vm.Script cached data"
+					},
+					{
+						"name": "DEP0111: process.binding()"
+					},
+					{
+						"name": "DEP0112: dgram private APIs"
+					},
+					{
+						"name": "DEP0113: Cipher.setAuthTag(), Decipher.getAuthTag()"
+					},
+					{
+						"name": "DEP0114: crypto._toBuf()"
+					},
+					{
+						"name": "DEP0115: crypto.prng(), crypto.pseudoRandomBytes(), crypto.rng()"
+					},
+					{
+						"name": "DEP0116: Legacy URL API"
+					},
+					{
+						"name": "DEP0117: Native crypto handles"
+					},
+					{
+						"name": "DEP0118: dns.lookup() support for a falsy hostname"
+					},
+					{
+						"name": "DEP0119: process.binding('uv').errname() private API"
+					},
+					{
+						"name": "DEP0120: Windows Performance Counter Support"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "DNS",
+		"subitems": [
+			{
+				"name": "Class: dns.Resolver",
+				"subitems": [
+					{
+						"name": "resolver.cancel()"
+					}
+				]
+			},
+			{
+				"name": "dns.getServers()"
+			},
+			{
+				"name": "dns.lookup(hostname[, options], callback)",
+				"subitems": [
+					{
+						"name": "Supported getaddrinfo flags"
+					}
+				]
+			},
+			{
+				"name": "dns.lookupService(address, port, callback)"
+			},
+			{
+				"name": "dns.resolve(hostname[, rrtype], callback)"
+			},
+			{
+				"name": "dns.resolve4(hostname[, options], callback)"
+			},
+			{
+				"name": "dns.resolve6(hostname[, options], callback)"
+			},
+			{
+				"name": "dns.resolveAny(hostname, callback)"
+			},
+			{
+				"name": "dns.resolveCname(hostname, callback)"
+			},
+			{
+				"name": "dns.resolveMx(hostname, callback)"
+			},
+			{
+				"name": "dns.resolveNaptr(hostname, callback)"
+			},
+			{
+				"name": "dns.resolveNs(hostname, callback)"
+			},
+			{
+				"name": "dns.resolvePtr(hostname, callback)"
+			},
+			{
+				"name": "dns.resolveSoa(hostname, callback)"
+			},
+			{
+				"name": "dns.resolveSrv(hostname, callback)"
+			},
+			{
+				"name": "dns.resolveTxt(hostname, callback)"
+			},
+			{
+				"name": "dns.reverse(ip, callback)"
+			},
+			{
+				"name": "dns.setServers(servers)"
+			},
+			{
+				"name": "DNS Promises API",
+				"subitems": [
+					{
+						"name": "Class: dnsPromises.Resolver"
+					},
+					{
+						"name": "dnsPromises.getServers()"
+					},
+					{
+						"name": "dnsPromises.lookup(hostname[, options])"
+					},
+					{
+						"name": "dnsPromises.lookupService(address, port)"
+					},
+					{
+						"name": "dnsPromises.resolve(hostname[, rrtype])"
+					},
+					{
+						"name": "dnsPromises.resolve4(hostname[, options])"
+					},
+					{
+						"name": "dnsPromises.resolve6(hostname[, options])"
+					},
+					{
+						"name": "dnsPromises.resolveAny(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolveCname(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolveMx(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolveNaptr(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolveNs(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolvePtr(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolveSoa(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolveSrv(hostname)"
+					},
+					{
+						"name": "dnsPromises.resolveTxt(hostname)"
+					},
+					{
+						"name": "dnsPromises.reverse(ip)"
+					},
+					{
+						"name": "dnsPromises.setServers(servers)"
+					}
+				]
+			},
+			{
+				"name": "Error codes"
+			},
+			{
+				"name": "Implementation considerations",
+				"subitems": [
+					{
+						"name": "dns.lookup()"
+					},
+					{
+						"name": "dns.resolve(), dns.resolve*() and dns.reverse()"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Domain",
+		"subitems": [
+			{
+				"name": "Warning: Don't Ignore Errors!"
+			},
+			{
+				"name": "Additions to Error objects"
+			},
+			{
+				"name": "Implicit Binding"
+			},
+			{
+				"name": "Explicit Binding"
+			},
+			{
+				"name": "domain.create()"
+			},
+			{
+				"name": "Class: Domain",
+				"subitems": [
+					{
+						"name": "domain.members"
+					},
+					{
+						"name": "domain.add(emitter)"
+					},
+					{
+						"name": "domain.bind(callback)"
+					},
+					{
+						"name": "domain.enter()"
+					},
+					{
+						"name": "domain.exit()"
+					},
+					{
+						"name": "domain.intercept(callback)"
+					},
+					{
+						"name": "domain.remove(emitter)"
+					},
+					{
+						"name": "domain.run(fn[, ...args])"
+					}
+				]
+			},
+			{
+				"name": "Domains and Promises"
+			}
+		]
+	},
+	{
+		"name": "ECMAScript Modules",
+		"subitems": [
+			{
+				"name": "Enabling"
+			},
+			{
+				"name": "Features",
+				"subitems": [
+					{
+						"name": "Supported",
+						"subitems": [
+							{
+								"name": "import.meta"
+							}
+						]
+					},
+					{
+						"name": "Unsupported"
+					}
+				]
+			},
+			{
+				"name": "Notable differences between import and require",
+				"subitems": [
+					{
+						"name": "No NODE_PATH"
+					},
+					{
+						"name": "No require.extensions"
+					},
+					{
+						"name": "No require.cache"
+					},
+					{
+						"name": "URL based paths"
+					}
+				]
+			},
+			{
+				"name": "Interop with existing modules"
+			},
+			{
+				"name": "Loader hooks",
+				"subitems": [
+					{
+						"name": "Resolve hook"
+					},
+					{
+						"name": "Dynamic instantiate hook"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Errors",
+		"subitems": [
+			{
+				"name": "Error Propagation and Interception",
+				"subitems": [
+					{
+						"name": "Error-first callbacks"
+					}
+				]
+			},
+			{
+				"name": "Class: Error",
+				"subitems": [
+					{
+						"name": "new Error(message)"
+					},
+					{
+						"name": "Error.captureStackTrace(targetObject[, constructorOpt])"
+					},
+					{
+						"name": "Error.stackTraceLimit"
+					},
+					{
+						"name": "error.code"
+					},
+					{
+						"name": "error.message"
+					},
+					{
+						"name": "error.stack"
+					}
+				]
+			},
+			{
+				"name": "Class: AssertionError"
+			},
+			{
+				"name": "Class: RangeError"
+			},
+			{
+				"name": "Class: ReferenceError"
+			},
+			{
+				"name": "Class: SyntaxError"
+			},
+			{
+				"name": "Class: TypeError"
+			},
+			{
+				"name": "Exceptions vs. Errors"
+			},
+			{
+				"name": "System Errors",
+				"subitems": [
+					{
+						"name": "Class: SystemError",
+						"subitems": [
+							{
+								"name": "error.address"
+							},
+							{
+								"name": "error.code"
+							},
+							{
+								"name": "error.dest"
+							},
+							{
+								"name": "error.errno"
+							},
+							{
+								"name": "error.info"
+							},
+							{
+								"name": "error.message"
+							},
+							{
+								"name": "error.path"
+							},
+							{
+								"name": "error.port"
+							},
+							{
+								"name": "error.syscall"
+							}
+						]
+					},
+					{
+						"name": "Common System Errors"
+					}
+				]
+			},
+			{
+				"name": "Node.js Error Codes",
+				"subitems": [
+					{
+						"name": "ERR_AMBIGUOUS_ARGUMENT"
+					},
+					{
+						"name": "ERR_ARG_NOT_ITERABLE"
+					},
+					{
+						"name": "ERR_ASSERTION"
+					},
+					{
+						"name": "ERR_ASYNC_CALLBACK"
+					},
+					{
+						"name": "ERR_ASYNC_TYPE"
+					},
+					{
+						"name": "ERR_BROTLI_COMPRESSION_FAILED"
+					},
+					{
+						"name": "ERR_BROTLI_INVALID_PARAM"
+					},
+					{
+						"name": "ERR_BUFFER_CONTEXT_NOT_AVAILABLE"
+					},
+					{
+						"name": "ERR_BUFFER_OUT_OF_BOUNDS"
+					},
+					{
+						"name": "ERR_BUFFER_TOO_LARGE"
+					},
+					{
+						"name": "ERR_CANNOT_TRANSFER_OBJECT"
+					},
+					{
+						"name": "ERR_CANNOT_WATCH_SIGINT"
+					},
+					{
+						"name": "ERR_CHILD_CLOSED_BEFORE_REPLY"
+					},
+					{
+						"name": "ERR_CHILD_PROCESS_IPC_REQUIRED"
+					},
+					{
+						"name": "ERR_CHILD_PROCESS_STDIO_MAXBUFFER"
+					},
+					{
+						"name": "ERR_CONSOLE_WRITABLE_STREAM"
+					},
+					{
+						"name": "ERR_CONSTRUCT_CALL_REQUIRED"
+					},
+					{
+						"name": "ERR_CPU_USAGE"
+					},
+					{
+						"name": "ERR_CRYPTO_CUSTOM_ENGINE_NOT_SUPPORTED"
+					},
+					{
+						"name": "ERR_CRYPTO_ECDH_INVALID_FORMAT"
+					},
+					{
+						"name": "ERR_CRYPTO_ECDH_INVALID_PUBLIC_KEY"
+					},
+					{
+						"name": "ERR_CRYPTO_ENGINE_UNKNOWN"
+					},
+					{
+						"name": "ERR_CRYPTO_FIPS_FORCED"
+					},
+					{
+						"name": "ERR_CRYPTO_FIPS_UNAVAILABLE"
+					},
+					{
+						"name": "ERR_CRYPTO_HASH_DIGEST_NO_UTF16"
+					},
+					{
+						"name": "ERR_CRYPTO_HASH_FINALIZED"
+					},
+					{
+						"name": "ERR_CRYPTO_HASH_UPDATE_FAILED"
+					},
+					{
+						"name": "ERR_CRYPTO_INCOMPATIBLE_KEY_OPTIONS"
+					},
+					{
+						"name": "ERR_CRYPTO_INVALID_DIGEST"
+					},
+					{
+						"name": "ERR_CRYPTO_INVALID_KEY_OBJECT_TYPE"
+					},
+					{
+						"name": "ERR_CRYPTO_INVALID_STATE"
+					},
+					{
+						"name": "ERR_CRYPTO_PBKDF2_ERROR"
+					},
+					{
+						"name": "ERR_CRYPTO_SCRYPT_INVALID_PARAMETER"
+					},
+					{
+						"name": "ERR_CRYPTO_SCRYPT_NOT_SUPPORTED"
+					},
+					{
+						"name": "ERR_CRYPTO_SIGN_KEY_REQUIRED"
+					},
+					{
+						"name": "ERR_CRYPTO_TIMING_SAFE_EQUAL_LENGTH"
+					},
+					{
+						"name": "ERR_DNS_SET_SERVERS_FAILED"
+					},
+					{
+						"name": "ERR_DOMAIN_CALLBACK_NOT_AVAILABLE"
+					},
+					{
+						"name": "ERR_DOMAIN_CANNOT_SET_UNCAUGHT_EXCEPTION_CAPTURE"
+					},
+					{
+						"name": "ERR_ENCODING_INVALID_ENCODED_DATA"
+					},
+					{
+						"name": "ERR_ENCODING_NOT_SUPPORTED"
+					},
+					{
+						"name": "ERR_FALSY_VALUE_REJECTION"
+					},
+					{
+						"name": "ERR_FS_FILE_TOO_LARGE"
+					},
+					{
+						"name": "ERR_FS_INVALID_SYMLINK_TYPE"
+					},
+					{
+						"name": "ERR_HTTP_HEADERS_SENT"
+					},
+					{
+						"name": "ERR_HTTP_INVALID_HEADER_VALUE"
+					},
+					{
+						"name": "ERR_HTTP_INVALID_STATUS_CODE"
+					},
+					{
+						"name": "ERR_HTTP_TRAILER_INVALID"
+					},
+					{
+						"name": "ERR_HTTP2_ALTSVC_INVALID_ORIGIN"
+					},
+					{
+						"name": "ERR_HTTP2_ALTSVC_LENGTH"
+					},
+					{
+						"name": "ERR_HTTP2_CONNECT_AUTHORITY"
+					},
+					{
+						"name": "ERR_HTTP2_CONNECT_PATH"
+					},
+					{
+						"name": "ERR_HTTP2_CONNECT_SCHEME"
+					},
+					{
+						"name": "ERR_HTTP2_ERROR"
+					},
+					{
+						"name": "ERR_HTTP2_GOAWAY_SESSION"
+					},
+					{
+						"name": "ERR_HTTP2_HEADERS_AFTER_RESPOND"
+					},
+					{
+						"name": "ERR_HTTP2_HEADERS_SENT"
+					},
+					{
+						"name": "ERR_HTTP2_HEADER_SINGLE_VALUE"
+					},
+					{
+						"name": "ERR_HTTP2_INFO_STATUS_NOT_ALLOWED"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_CONNECTION_HEADERS"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_HEADER_VALUE"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_INFO_STATUS"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_ORIGIN"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_PACKED_SETTINGS_LENGTH"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_PSEUDOHEADER"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_SESSION"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_SETTING_VALUE"
+					},
+					{
+						"name": "ERR_HTTP2_INVALID_STREAM"
+					},
+					{
+						"name": "ERR_HTTP2_MAX_PENDING_SETTINGS_ACK"
+					},
+					{
+						"name": "ERR_HTTP2_NESTED_PUSH"
+					},
+					{
+						"name": "ERR_HTTP2_NO_SOCKET_MANIPULATION"
+					},
+					{
+						"name": "ERR_HTTP2_ORIGIN_LENGTH"
+					},
+					{
+						"name": "ERR_HTTP2_OUT_OF_STREAMS"
+					},
+					{
+						"name": "ERR_HTTP2_PAYLOAD_FORBIDDEN"
+					},
+					{
+						"name": "ERR_HTTP2_PING_CANCEL"
+					},
+					{
+						"name": "ERR_HTTP2_PING_LENGTH"
+					},
+					{
+						"name": "ERR_HTTP2_PSEUDOHEADER_NOT_ALLOWED"
+					},
+					{
+						"name": "ERR_HTTP2_PUSH_DISABLED"
+					},
+					{
+						"name": "ERR_HTTP2_SEND_FILE"
+					},
+					{
+						"name": "ERR_HTTP2_SEND_FILE_NOSEEK"
+					},
+					{
+						"name": "ERR_HTTP2_SESSION_ERROR"
+					},
+					{
+						"name": "ERR_HTTP2_SETTINGS_CANCEL"
+					},
+					{
+						"name": "ERR_HTTP2_SOCKET_BOUND"
+					},
+					{
+						"name": "ERR_HTTP2_SOCKET_UNBOUND"
+					},
+					{
+						"name": "ERR_HTTP2_STATUS_101"
+					},
+					{
+						"name": "ERR_HTTP2_STATUS_INVALID"
+					},
+					{
+						"name": "ERR_HTTP2_STREAM_CANCEL"
+					},
+					{
+						"name": "ERR_HTTP2_STREAM_ERROR"
+					},
+					{
+						"name": "ERR_HTTP2_STREAM_SELF_DEPENDENCY"
+					},
+					{
+						"name": "ERR_HTTP2_TRAILERS_ALREADY_SENT"
+					},
+					{
+						"name": "ERR_HTTP2_TRAILERS_NOT_READY"
+					},
+					{
+						"name": "ERR_HTTP2_UNSUPPORTED_PROTOCOL"
+					},
+					{
+						"name": "ERR_INCOMPATIBLE_OPTION_PAIR"
+					},
+					{
+						"name": "ERR_INSPECTOR_ALREADY_CONNECTED"
+					},
+					{
+						"name": "ERR_INSPECTOR_CLOSED"
+					},
+					{
+						"name": "ERR_INSPECTOR_COMMAND"
+					},
+					{
+						"name": "ERR_INSPECTOR_NOT_AVAILABLE"
+					},
+					{
+						"name": "ERR_INSPECTOR_NOT_CONNECTED"
+					},
+					{
+						"name": "ERR_INVALID_ADDRESS_FAMILY"
+					},
+					{
+						"name": "ERR_INVALID_ARG_TYPE"
+					},
+					{
+						"name": "ERR_INVALID_ARG_VALUE"
+					},
+					{
+						"name": "ERR_INVALID_ASYNC_ID"
+					},
+					{
+						"name": "ERR_INVALID_BUFFER_SIZE"
+					},
+					{
+						"name": "ERR_INVALID_CALLBACK"
+					},
+					{
+						"name": "ERR_INVALID_CHAR"
+					},
+					{
+						"name": "ERR_INVALID_CURSOR_POS"
+					},
+					{
+						"name": "ERR_INVALID_FD"
+					},
+					{
+						"name": "ERR_INVALID_FD_TYPE"
+					},
+					{
+						"name": "ERR_INVALID_FILE_URL_HOST"
+					},
+					{
+						"name": "ERR_INVALID_FILE_URL_PATH"
+					},
+					{
+						"name": "ERR_INVALID_HANDLE_TYPE"
+					},
+					{
+						"name": "ERR_INVALID_HTTP_TOKEN"
+					},
+					{
+						"name": "ERR_INVALID_IP_ADDRESS"
+					},
+					{
+						"name": "ERR_INVALID_OPT_VALUE"
+					},
+					{
+						"name": "ERR_INVALID_OPT_VALUE_ENCODING"
+					},
+					{
+						"name": "ERR_INVALID_PERFORMANCE_MARK"
+					},
+					{
+						"name": "ERR_INVALID_PROTOCOL"
+					},
+					{
+						"name": "ERR_INVALID_REPL_EVAL_CONFIG"
+					},
+					{
+						"name": "ERR_INVALID_RETURN_PROPERTY"
+					},
+					{
+						"name": "ERR_INVALID_RETURN_PROPERTY_VALUE"
+					},
+					{
+						"name": "ERR_INVALID_RETURN_VALUE"
+					},
+					{
+						"name": "ERR_INVALID_SYNC_FORK_INPUT"
+					},
+					{
+						"name": "ERR_INVALID_THIS"
+					},
+					{
+						"name": "ERR_INVALID_TRANSFER_OBJECT"
+					},
+					{
+						"name": "ERR_INVALID_TUPLE"
+					},
+					{
+						"name": "ERR_INVALID_URI"
+					},
+					{
+						"name": "ERR_INVALID_URL"
+					},
+					{
+						"name": "ERR_INVALID_URL_SCHEME"
+					},
+					{
+						"name": "ERR_IPC_CHANNEL_CLOSED"
+					},
+					{
+						"name": "ERR_IPC_DISCONNECTED"
+					},
+					{
+						"name": "ERR_IPC_ONE_PIPE"
+					},
+					{
+						"name": "ERR_IPC_SYNC_FORK"
+					},
+					{
+						"name": "ERR_MANIFEST_ASSERT_INTEGRITY"
+					},
+					{
+						"name": "ERR_MANIFEST_INTEGRITY_MISMATCH"
+					},
+					{
+						"name": "ERR_MANIFEST_PARSE_POLICY"
+					},
+					{
+						"name": "ERR_MANIFEST_TDZ"
+					},
+					{
+						"name": "ERR_MANIFEST_UNKNOWN_ONERROR"
+					},
+					{
+						"name": "ERR_MEMORY_ALLOCATION_FAILED"
+					},
+					{
+						"name": "ERR_METHOD_NOT_IMPLEMENTED"
+					},
+					{
+						"name": "ERR_MISSING_ARGS"
+					},
+					{
+						"name": "ERR_MISSING_DYNAMIC_INSTANTIATE_HOOK"
+					},
+					{
+						"name": "ERR_MISSING_MESSAGE_PORT_IN_TRANSFER_LIST"
+					},
+					{
+						"name": "ERR_MISSING_MODULE"
+					},
+					{
+						"name": "ERR_MISSING_PLATFORM_FOR_WORKER"
+					},
+					{
+						"name": "ERR_MODULE_RESOLUTION_LEGACY"
+					},
+					{
+						"name": "ERR_MULTIPLE_CALLBACK"
+					},
+					{
+						"name": "ERR_NAPI_CONS_FUNCTION"
+					},
+					{
+						"name": "ERR_NAPI_INVALID_DATAVIEW_ARGS"
+					},
+					{
+						"name": "ERR_NAPI_INVALID_TYPEDARRAY_ALIGNMENT"
+					},
+					{
+						"name": "ERR_NAPI_INVALID_TYPEDARRAY_LENGTH"
+					},
+					{
+						"name": "ERR_NAPI_TSFN_CALL_JS"
+					},
+					{
+						"name": "ERR_NAPI_TSFN_GET_UNDEFINED"
+					},
+					{
+						"name": "ERR_NAPI_TSFN_START_IDLE_LOOP"
+					},
+					{
+						"name": "ERR_NAPI_TSFN_STOP_IDLE_LOOP"
+					},
+					{
+						"name": "ERR_NO_CRYPTO"
+					},
+					{
+						"name": "ERR_NO_ICU"
+					},
+					{
+						"name": "ERR_NO_LONGER_SUPPORTED"
+					},
+					{
+						"name": "ERR_OUT_OF_RANGE"
+					},
+					{
+						"name": "ERR_REQUIRE_ESM"
+					},
+					{
+						"name": "ERR_SCRIPT_EXECUTION_INTERRUPTED"
+					},
+					{
+						"name": "ERR_SCRIPT_EXECUTION_TIMEOUT"
+					},
+					{
+						"name": "ERR_SERVER_ALREADY_LISTEN"
+					},
+					{
+						"name": "ERR_SERVER_NOT_RUNNING"
+					},
+					{
+						"name": "ERR_SOCKET_ALREADY_BOUND"
+					},
+					{
+						"name": "ERR_SOCKET_BAD_BUFFER_SIZE"
+					},
+					{
+						"name": "ERR_SOCKET_BAD_PORT"
+					},
+					{
+						"name": "ERR_SOCKET_BAD_TYPE"
+					},
+					{
+						"name": "ERR_SOCKET_BUFFER_SIZE"
+					},
+					{
+						"name": "ERR_SOCKET_CANNOT_SEND"
+					},
+					{
+						"name": "ERR_SOCKET_CLOSED"
+					},
+					{
+						"name": "ERR_SOCKET_DGRAM_NOT_RUNNING"
+					},
+					{
+						"name": "ERR_SRI_PARSE"
+					},
+					{
+						"name": "ERR_STREAM_CANNOT_PIPE"
+					},
+					{
+						"name": "ERR_STREAM_DESTROYED"
+					},
+					{
+						"name": "ERR_STREAM_NULL_VALUES"
+					},
+					{
+						"name": "ERR_STREAM_PREMATURE_CLOSE"
+					},
+					{
+						"name": "ERR_STREAM_PUSH_AFTER_EOF"
+					},
+					{
+						"name": "ERR_STREAM_UNSHIFT_AFTER_END_EVENT"
+					},
+					{
+						"name": "ERR_STREAM_WRAP"
+					},
+					{
+						"name": "ERR_STREAM_WRITE_AFTER_END"
+					},
+					{
+						"name": "ERR_STRING_TOO_LONG"
+					},
+					{
+						"name": "ERR_SYNTHETIC"
+					},
+					{
+						"name": "ERR_SYSTEM_ERROR"
+					},
+					{
+						"name": "ERR_TLS_CERT_ALTNAME_INVALID"
+					},
+					{
+						"name": "ERR_TLS_DH_PARAM_SIZE"
+					},
+					{
+						"name": "ERR_TLS_HANDSHAKE_TIMEOUT"
+					},
+					{
+						"name": "ERR_TLS_INVALID_PROTOCOL_VERSION"
+					},
+					{
+						"name": "ERR_TLS_PROTOCOL_VERSION_CONFLICT"
+					},
+					{
+						"name": "ERR_TLS_RENEGOTIATE"
+					},
+					{
+						"name": "ERR_TLS_RENEGOTIATION_DISABLED"
+					},
+					{
+						"name": "ERR_TLS_REQUIRED_SERVER_NAME"
+					},
+					{
+						"name": "ERR_TLS_SESSION_ATTACK"
+					},
+					{
+						"name": "ERR_TLS_SNI_FROM_SERVER"
+					},
+					{
+						"name": "ERR_TRACE_EVENTS_CATEGORY_REQUIRED"
+					},
+					{
+						"name": "ERR_TRACE_EVENTS_UNAVAILABLE"
+					},
+					{
+						"name": "ERR_TRANSFERRING_EXTERNALIZED_SHAREDARRAYBUFFER"
+					},
+					{
+						"name": "ERR_TRANSFORM_ALREADY_TRANSFORMING"
+					},
+					{
+						"name": "ERR_TRANSFORM_WITH_LENGTH_0"
+					},
+					{
+						"name": "ERR_TTY_INIT_FAILED"
+					},
+					{
+						"name": "ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET"
+					},
+					{
+						"name": "ERR_UNESCAPED_CHARACTERS"
+					},
+					{
+						"name": "ERR_UNHANDLED_ERROR"
+					},
+					{
+						"name": "ERR_UNKNOWN_BUILTIN_MODULE"
+					},
+					{
+						"name": "ERR_UNKNOWN_CREDENTIAL"
+					},
+					{
+						"name": "ERR_UNKNOWN_ENCODING"
+					},
+					{
+						"name": "ERR_UNKNOWN_FILE_EXTENSION"
+					},
+					{
+						"name": "ERR_UNKNOWN_MODULE_FORMAT"
+					},
+					{
+						"name": "ERR_UNKNOWN_SIGNAL"
+					},
+					{
+						"name": "ERR_V8BREAKITERATOR"
+					},
+					{
+						"name": "ERR_VALID_PERFORMANCE_ENTRY_TYPE"
+					},
+					{
+						"name": "ERR_VM_DYNAMIC_IMPORT_CALLBACK_MISSING"
+					},
+					{
+						"name": "ERR_VM_MODULE_ALREADY_LINKED"
+					},
+					{
+						"name": "ERR_VM_MODULE_DIFFERENT_CONTEXT"
+					},
+					{
+						"name": "ERR_VM_MODULE_LINKING_ERRORED"
+					},
+					{
+						"name": "ERR_VM_MODULE_NOT_LINKED"
+					},
+					{
+						"name": "ERR_VM_MODULE_NOT_MODULE"
+					},
+					{
+						"name": "ERR_VM_MODULE_STATUS"
+					},
+					{
+						"name": "ERR_WORKER_INVALID_EXEC_ARGV"
+					},
+					{
+						"name": "ERR_WORKER_PATH"
+					},
+					{
+						"name": "ERR_WORKER_UNSERIALIZABLE_ERROR"
+					},
+					{
+						"name": "ERR_WORKER_UNSUPPORTED_EXTENSION"
+					},
+					{
+						"name": "ERR_WORKER_UNSUPPORTED_OPERATION"
+					},
+					{
+						"name": "ERR_ZLIB_INITIALIZATION_FAILED"
+					},
+					{
+						"name": "HPE_HEADER_OVERFLOW"
+					},
+					{
+						"name": "MODULE_NOT_FOUND"
+					}
+				]
+			},
+			{
+				"name": "Legacy Node.js Error Codes",
+				"subitems": [
+					{
+						"name": "ERR_CLOSED_MESSAGE_PORT"
+					},
+					{
+						"name": "ERR_HTTP2_FRAME_ERROR"
+					},
+					{
+						"name": "ERR_HTTP2_HEADERS_OBJECT"
+					},
+					{
+						"name": "ERR_HTTP2_HEADER_REQUIRED"
+					},
+					{
+						"name": "ERR_HTTP2_INFO_HEADERS_AFTER_RESPOND"
+					},
+					{
+						"name": "ERR_HTTP2_STREAM_CLOSED"
+					},
+					{
+						"name": "ERR_HTTP_INVALID_CHAR"
+					},
+					{
+						"name": "ERR_INDEX_OUT_OF_RANGE"
+					},
+					{
+						"name": "ERR_NAPI_CONS_PROTOTYPE_OBJECT"
+					},
+					{
+						"name": "ERR_OUTOFMEMORY"
+					},
+					{
+						"name": "ERR_PARSE_HISTORY_DATA"
+					},
+					{
+						"name": "ERR_STDERR_CLOSE"
+					},
+					{
+						"name": "ERR_STDOUT_CLOSE"
+					},
+					{
+						"name": "ERR_STREAM_READ_NOT_IMPLEMENTED"
+					},
+					{
+						"name": "ERR_TLS_RENEGOTIATION_FAILED"
+					},
+					{
+						"name": "ERR_UNKNOWN_BUILTIN_MODULE"
+					},
+					{
+						"name": "ERR_UNKNOWN_STDIN_TYPE"
+					},
+					{
+						"name": "ERR_UNKNOWN_STREAM_TYPE"
+					},
+					{
+						"name": "ERR_VALUE_OUT_OF_RANGE"
+					},
+					{
+						"name": "ERR_ZLIB_BINDING_CLOSED"
+					},
+					{
+						"name": "Other error codes",
+						"subitems": [
+							{
+								"name": "ERR_FS_WATCHER_ALREADY_STARTED"
+							},
+							{
+								"name": "ERR_FS_WATCHER_NOT_STARTED"
+							},
+							{
+								"name": "ERR_HTTP2_ALREADY_SHUTDOWN"
+							},
+							{
+								"name": "ERR_HTTP2_ERROR"
+							},
+							{
+								"name": "ERR_INVALID_REPL_HISTORY"
+							},
+							{
+								"name": "ERR_MISSING_DYNAMIC_INSTANTIATE_HOOK"
+							},
+							{
+								"name": "ERR_STREAM_HAS_STRINGDECODER"
+							},
+							{
+								"name": "ERR_STRING_TOO_LARGE"
+							},
+							{
+								"name": "ERR_TTY_WRITABLE_NOT_READABLE"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Events",
+		"subitems": [
+			{
+				"name": "Passing arguments and this to listeners"
+			},
+			{
+				"name": "Asynchronous vs. Synchronous"
+			},
+			{
+				"name": "Handling events only once"
+			},
+			{
+				"name": "Error events"
+			},
+			{
+				"name": "Class: EventEmitter",
+				"subitems": [
+					{
+						"name": "Event: 'newListener'"
+					},
+					{
+						"name": "Event: 'removeListener'"
+					},
+					{
+						"name": "EventEmitter.listenerCount(emitter, eventName)"
+					},
+					{
+						"name": "EventEmitter.defaultMaxListeners"
+					},
+					{
+						"name": "emitter.addListener(eventName, listener)"
+					},
+					{
+						"name": "emitter.emit(eventName[, ...args])"
+					},
+					{
+						"name": "emitter.eventNames()"
+					},
+					{
+						"name": "emitter.getMaxListeners()"
+					},
+					{
+						"name": "emitter.listenerCount(eventName)"
+					},
+					{
+						"name": "emitter.listeners(eventName)"
+					},
+					{
+						"name": "emitter.off(eventName, listener)"
+					},
+					{
+						"name": "emitter.on(eventName, listener)"
+					},
+					{
+						"name": "emitter.once(eventName, listener)"
+					},
+					{
+						"name": "emitter.prependListener(eventName, listener)"
+					},
+					{
+						"name": "emitter.prependOnceListener(eventName, listener)"
+					},
+					{
+						"name": "emitter.removeAllListeners([eventName])"
+					},
+					{
+						"name": "emitter.removeListener(eventName, listener)"
+					},
+					{
+						"name": "emitter.setMaxListeners(n)"
+					},
+					{
+						"name": "emitter.rawListeners(eventName)"
+					}
+				]
+			},
+			{
+				"name": "events.once(emitter, name)"
+			}
+		]
+	},
+	{
+		"name": "File System",
+		"subitems": [
+			{
+				"name": "File paths",
+				"subitems": [
+					{
+						"name": "URL object support"
+					}
+				]
+			},
+			{
+				"name": "File Descriptors"
+			},
+			{
+				"name": "Threadpool Usage"
+			},
+			{
+				"name": "Class: fs.Dirent",
+				"subitems": [
+					{
+						"name": "dirent.isBlockDevice()"
+					},
+					{
+						"name": "dirent.isCharacterDevice()"
+					},
+					{
+						"name": "dirent.isDirectory()"
+					},
+					{
+						"name": "dirent.isFIFO()"
+					},
+					{
+						"name": "dirent.isFile()"
+					},
+					{
+						"name": "dirent.isSocket()"
+					},
+					{
+						"name": "dirent.isSymbolicLink()"
+					},
+					{
+						"name": "dirent.name"
+					}
+				]
+			},
+			{
+				"name": "Class: fs.FSWatcher",
+				"subitems": [
+					{
+						"name": "Event: 'change'"
+					},
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'error'"
+					},
+					{
+						"name": "watcher.close()"
+					}
+				]
+			},
+			{
+				"name": "Class: fs.ReadStream",
+				"subitems": [
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'open'"
+					},
+					{
+						"name": "Event: 'ready'"
+					},
+					{
+						"name": "readStream.bytesRead"
+					},
+					{
+						"name": "readStream.path"
+					},
+					{
+						"name": "readStream.pending"
+					}
+				]
+			},
+			{
+				"name": "Class: fs.Stats",
+				"subitems": [
+					{
+						"name": "stats.isBlockDevice()"
+					},
+					{
+						"name": "stats.isCharacterDevice()"
+					},
+					{
+						"name": "stats.isDirectory()"
+					},
+					{
+						"name": "stats.isFIFO()"
+					},
+					{
+						"name": "stats.isFile()"
+					},
+					{
+						"name": "stats.isSocket()"
+					},
+					{
+						"name": "stats.isSymbolicLink()"
+					},
+					{
+						"name": "stats.dev"
+					},
+					{
+						"name": "stats.ino"
+					},
+					{
+						"name": "stats.mode"
+					},
+					{
+						"name": "stats.nlink"
+					},
+					{
+						"name": "stats.uid"
+					},
+					{
+						"name": "stats.gid"
+					},
+					{
+						"name": "stats.rdev"
+					},
+					{
+						"name": "stats.size"
+					},
+					{
+						"name": "stats.blksize"
+					},
+					{
+						"name": "stats.blocks"
+					},
+					{
+						"name": "stats.atimeMs"
+					},
+					{
+						"name": "stats.mtimeMs"
+					},
+					{
+						"name": "stats.ctimeMs"
+					},
+					{
+						"name": "stats.birthtimeMs"
+					},
+					{
+						"name": "stats.atime"
+					},
+					{
+						"name": "stats.mtime"
+					},
+					{
+						"name": "stats.ctime"
+					},
+					{
+						"name": "stats.birthtime"
+					},
+					{
+						"name": "Stat Time Values"
+					}
+				]
+			},
+			{
+				"name": "Class: fs.WriteStream",
+				"subitems": [
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'open'"
+					},
+					{
+						"name": "Event: 'ready'"
+					},
+					{
+						"name": "writeStream.bytesWritten"
+					},
+					{
+						"name": "writeStream.path"
+					},
+					{
+						"name": "writeStream.pending"
+					}
+				]
+			},
+			{
+				"name": "fs.access(path[, mode], callback)"
+			},
+			{
+				"name": "fs.accessSync(path[, mode])"
+			},
+			{
+				"name": "fs.appendFile(path, data[, options], callback)"
+			},
+			{
+				"name": "fs.appendFileSync(path, data[, options])"
+			},
+			{
+				"name": "fs.chmod(path, mode, callback)",
+				"subitems": [
+					{
+						"name": "File modes"
+					}
+				]
+			},
+			{
+				"name": "fs.chmodSync(path, mode)"
+			},
+			{
+				"name": "fs.chown(path, uid, gid, callback)"
+			},
+			{
+				"name": "fs.chownSync(path, uid, gid)"
+			},
+			{
+				"name": "fs.close(fd, callback)"
+			},
+			{
+				"name": "fs.closeSync(fd)"
+			},
+			{
+				"name": "fs.constants"
+			},
+			{
+				"name": "fs.copyFile(src, dest[, flags], callback)"
+			},
+			{
+				"name": "fs.copyFileSync(src, dest[, flags])"
+			},
+			{
+				"name": "fs.createReadStream(path[, options])"
+			},
+			{
+				"name": "fs.createWriteStream(path[, options])"
+			},
+			{
+				"name": "fs.exists(path, callback)"
+			},
+			{
+				"name": "fs.existsSync(path)"
+			},
+			{
+				"name": "fs.fchmod(fd, mode, callback)"
+			},
+			{
+				"name": "fs.fchmodSync(fd, mode)"
+			},
+			{
+				"name": "fs.fchown(fd, uid, gid, callback)"
+			},
+			{
+				"name": "fs.fchownSync(fd, uid, gid)"
+			},
+			{
+				"name": "fs.fdatasync(fd, callback)"
+			},
+			{
+				"name": "fs.fdatasyncSync(fd)"
+			},
+			{
+				"name": "fs.fstat(fd[, options], callback)"
+			},
+			{
+				"name": "fs.fstatSync(fd[, options])"
+			},
+			{
+				"name": "fs.fsync(fd, callback)"
+			},
+			{
+				"name": "fs.fsyncSync(fd)"
+			},
+			{
+				"name": "fs.ftruncate(fd[, len], callback)"
+			},
+			{
+				"name": "fs.ftruncateSync(fd[, len])"
+			},
+			{
+				"name": "fs.futimes(fd, atime, mtime, callback)"
+			},
+			{
+				"name": "fs.futimesSync(fd, atime, mtime)"
+			},
+			{
+				"name": "fs.lchmod(path, mode, callback)"
+			},
+			{
+				"name": "fs.lchmodSync(path, mode)"
+			},
+			{
+				"name": "fs.lchown(path, uid, gid, callback)"
+			},
+			{
+				"name": "fs.lchownSync(path, uid, gid)"
+			},
+			{
+				"name": "fs.link(existingPath, newPath, callback)"
+			},
+			{
+				"name": "fs.linkSync(existingPath, newPath)"
+			},
+			{
+				"name": "fs.lstat(path[, options], callback)"
+			},
+			{
+				"name": "fs.lstatSync(path[, options])"
+			},
+			{
+				"name": "fs.mkdir(path[, options], callback)"
+			},
+			{
+				"name": "fs.mkdirSync(path[, options])"
+			},
+			{
+				"name": "fs.mkdtemp(prefix[, options], callback)"
+			},
+			{
+				"name": "fs.mkdtempSync(prefix[, options])"
+			},
+			{
+				"name": "fs.open(path[, flags[, mode]], callback)"
+			},
+			{
+				"name": "fs.openSync(path[, flags, mode])"
+			},
+			{
+				"name": "fs.read(fd, buffer, offset, length, position, callback)"
+			},
+			{
+				"name": "fs.readdir(path[, options], callback)"
+			},
+			{
+				"name": "fs.readdirSync(path[, options])"
+			},
+			{
+				"name": "fs.readFile(path[, options], callback)",
+				"subitems": [
+					{
+						"name": "File Descriptors"
+					}
+				]
+			},
+			{
+				"name": "fs.readFileSync(path[, options])"
+			},
+			{
+				"name": "fs.readlink(path[, options], callback)"
+			},
+			{
+				"name": "fs.readlinkSync(path[, options])"
+			},
+			{
+				"name": "fs.readSync(fd, buffer, offset, length, position)"
+			},
+			{
+				"name": "fs.realpath(path[, options], callback)"
+			},
+			{
+				"name": "fs.realpath.native(path[, options], callback)"
+			},
+			{
+				"name": "fs.realpathSync(path[, options])"
+			},
+			{
+				"name": "fs.realpathSync.native(path[, options])"
+			},
+			{
+				"name": "fs.rename(oldPath, newPath, callback)"
+			},
+			{
+				"name": "fs.renameSync(oldPath, newPath)"
+			},
+			{
+				"name": "fs.rmdir(path, callback)"
+			},
+			{
+				"name": "fs.rmdirSync(path)"
+			},
+			{
+				"name": "fs.stat(path[, options], callback)"
+			},
+			{
+				"name": "fs.statSync(path[, options])"
+			},
+			{
+				"name": "fs.symlink(target, path[, type], callback)"
+			},
+			{
+				"name": "fs.symlinkSync(target, path[, type])"
+			},
+			{
+				"name": "fs.truncate(path[, len], callback)"
+			},
+			{
+				"name": "fs.truncateSync(path[, len])"
+			},
+			{
+				"name": "fs.unlink(path, callback)"
+			},
+			{
+				"name": "fs.unlinkSync(path)"
+			},
+			{
+				"name": "fs.unwatchFile(filename[, listener])"
+			},
+			{
+				"name": "fs.utimes(path, atime, mtime, callback)"
+			},
+			{
+				"name": "fs.utimesSync(path, atime, mtime)"
+			},
+			{
+				"name": "fs.watch(filename[, options][, listener])",
+				"subitems": [
+					{
+						"name": "Caveats",
+						"subitems": [
+							{
+								"name": "Availability"
+							},
+							{
+								"name": "Inodes"
+							},
+							{
+								"name": "Filename Argument"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "fs.watchFile(filename[, options], listener)"
+			},
+			{
+				"name": "fs.write(fd, buffer[, offset[, length[, position]]], callback)"
+			},
+			{
+				"name": "fs.write(fd, string[, position[, encoding]], callback)"
+			},
+			{
+				"name": "fs.writeFile(file, data[, options], callback)",
+				"subitems": [
+					{
+						"name": "File Descriptors"
+					}
+				]
+			},
+			{
+				"name": "fs.writeFileSync(file, data[, options])"
+			},
+			{
+				"name": "fs.writeSync(fd, buffer[, offset[, length[, position]]])"
+			},
+			{
+				"name": "fs.writeSync(fd, string[, position[, encoding]])"
+			},
+			{
+				"name": "fs Promises API",
+				"subitems": [
+					{
+						"name": "class: FileHandle",
+						"subitems": [
+							{
+								"name": "filehandle.appendFile(data, options)"
+							},
+							{
+								"name": "filehandle.chmod(mode)"
+							},
+							{
+								"name": "filehandle.chown(uid, gid)"
+							},
+							{
+								"name": "filehandle.close()"
+							},
+							{
+								"name": "filehandle.datasync()"
+							},
+							{
+								"name": "filehandle.fd"
+							},
+							{
+								"name": "filehandle.read(buffer, offset, length, position)"
+							},
+							{
+								"name": "filehandle.readFile(options)"
+							},
+							{
+								"name": "filehandle.stat([options])"
+							},
+							{
+								"name": "filehandle.sync()"
+							},
+							{
+								"name": "filehandle.truncate(len)"
+							},
+							{
+								"name": "filehandle.utimes(atime, mtime)"
+							},
+							{
+								"name": "filehandle.write(buffer, offset, length, position)"
+							},
+							{
+								"name": "filehandle.write(string[, position[, encoding]])"
+							},
+							{
+								"name": "filehandle.writeFile(data, options)"
+							}
+						]
+					},
+					{
+						"name": "fsPromises.access(path[, mode])"
+					},
+					{
+						"name": "fsPromises.appendFile(path, data[, options])"
+					},
+					{
+						"name": "fsPromises.chmod(path, mode)"
+					},
+					{
+						"name": "fsPromises.chown(path, uid, gid)"
+					},
+					{
+						"name": "fsPromises.copyFile(src, dest[, flags])"
+					},
+					{
+						"name": "fsPromises.lchmod(path, mode)"
+					},
+					{
+						"name": "fsPromises.lchown(path, uid, gid)"
+					},
+					{
+						"name": "fsPromises.link(existingPath, newPath)"
+					},
+					{
+						"name": "fsPromises.lstat(path[, options])"
+					},
+					{
+						"name": "fsPromises.mkdir(path[, options])"
+					},
+					{
+						"name": "fsPromises.mkdtemp(prefix[, options])"
+					},
+					{
+						"name": "fsPromises.open(path, flags[, mode])"
+					},
+					{
+						"name": "fsPromises.readdir(path[, options])"
+					},
+					{
+						"name": "fsPromises.readFile(path[, options])"
+					},
+					{
+						"name": "fsPromises.readlink(path[, options])"
+					},
+					{
+						"name": "fsPromises.realpath(path[, options])"
+					},
+					{
+						"name": "fsPromises.rename(oldPath, newPath)"
+					},
+					{
+						"name": "fsPromises.rmdir(path)"
+					},
+					{
+						"name": "fsPromises.stat(path[, options])"
+					},
+					{
+						"name": "fsPromises.symlink(target, path[, type])"
+					},
+					{
+						"name": "fsPromises.truncate(path[, len])"
+					},
+					{
+						"name": "fsPromises.unlink(path)"
+					},
+					{
+						"name": "fsPromises.utimes(path, atime, mtime)"
+					},
+					{
+						"name": "fsPromises.writeFile(file, data[, options])"
+					}
+				]
+			},
+			{
+				"name": "FS Constants",
+				"subitems": [
+					{
+						"name": "File Access Constants"
+					},
+					{
+						"name": "File Copy Constants"
+					},
+					{
+						"name": "File Open Constants"
+					},
+					{
+						"name": "File Type Constants"
+					},
+					{
+						"name": "File Mode Constants"
+					}
+				]
+			},
+			{
+				"name": "File System Flags"
+			}
+		]
+	},
+	{
+		"name": "Global Objects",
+		"subitems": [
+			{
+				"name": "Class: Buffer"
+			},
+			{
+				"name": "__dirname"
+			},
+			{
+				"name": "__filename"
+			},
+			{
+				"name": "clearImmediate(immediateObject)"
+			},
+			{
+				"name": "clearInterval(intervalObject)"
+			},
+			{
+				"name": "clearTimeout(timeoutObject)"
+			},
+			{
+				"name": "console"
+			},
+			{
+				"name": "exports"
+			},
+			{
+				"name": "global"
+			},
+			{
+				"name": "module"
+			},
+			{
+				"name": "process"
+			},
+			{
+				"name": "queueMicrotask(callback)"
+			},
+			{
+				"name": "require()"
+			},
+			{
+				"name": "setImmediate(callback[, ...args])"
+			},
+			{
+				"name": "setInterval(callback, delay[, ...args])"
+			},
+			{
+				"name": "setTimeout(callback, delay[, ...args])"
+			},
+			{
+				"name": "TextDecoder"
+			},
+			{
+				"name": "TextEncoder"
+			},
+			{
+				"name": "URL"
+			},
+			{
+				"name": "URLSearchParams"
+			},
+			{
+				"name": "WebAssembly"
+			}
+		]
+	},
+	{
+		"name": "HTTP",
+		"subitems": [
+			{
+				"name": "Class: http.Agent",
+				"subitems": [
+					{
+						"name": "new Agent([options])"
+					},
+					{
+						"name": "agent.createConnection(options[, callback])"
+					},
+					{
+						"name": "agent.keepSocketAlive(socket)"
+					},
+					{
+						"name": "agent.reuseSocket(socket, request)"
+					},
+					{
+						"name": "agent.destroy()"
+					},
+					{
+						"name": "agent.freeSockets"
+					},
+					{
+						"name": "agent.getName(options)"
+					},
+					{
+						"name": "agent.maxFreeSockets"
+					},
+					{
+						"name": "agent.maxSockets"
+					},
+					{
+						"name": "agent.requests"
+					},
+					{
+						"name": "agent.sockets"
+					}
+				]
+			},
+			{
+				"name": "Class: http.ClientRequest",
+				"subitems": [
+					{
+						"name": "Event: 'abort'"
+					},
+					{
+						"name": "Event: 'connect'"
+					},
+					{
+						"name": "Event: 'continue'"
+					},
+					{
+						"name": "Event: 'information'"
+					},
+					{
+						"name": "Event: 'response'"
+					},
+					{
+						"name": "Event: 'socket'"
+					},
+					{
+						"name": "Event: 'timeout'"
+					},
+					{
+						"name": "Event: 'upgrade'"
+					},
+					{
+						"name": "request.abort()"
+					},
+					{
+						"name": "request.aborted"
+					},
+					{
+						"name": "request.connection"
+					},
+					{
+						"name": "request.end([data[, encoding]][, callback])"
+					},
+					{
+						"name": "request.finished"
+					},
+					{
+						"name": "request.flushHeaders()"
+					},
+					{
+						"name": "request.getHeader(name)"
+					},
+					{
+						"name": "request.maxHeadersCount"
+					},
+					{
+						"name": "request.path"
+					},
+					{
+						"name": "request.removeHeader(name)"
+					},
+					{
+						"name": "request.setHeader(name, value)"
+					},
+					{
+						"name": "request.setNoDelay([noDelay])"
+					},
+					{
+						"name": "request.setSocketKeepAlive([enable][, initialDelay])"
+					},
+					{
+						"name": "request.setTimeout(timeout[, callback])"
+					},
+					{
+						"name": "request.socket"
+					},
+					{
+						"name": "request.write(chunk[, encoding][, callback])"
+					}
+				]
+			},
+			{
+				"name": "Class: http.Server",
+				"subitems": [
+					{
+						"name": "Event: 'checkContinue'"
+					},
+					{
+						"name": "Event: 'checkExpectation'"
+					},
+					{
+						"name": "Event: 'clientError'"
+					},
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'connect'"
+					},
+					{
+						"name": "Event: 'connection'"
+					},
+					{
+						"name": "Event: 'request'"
+					},
+					{
+						"name": "Event: 'upgrade'"
+					},
+					{
+						"name": "server.close([callback])"
+					},
+					{
+						"name": "server.headersTimeout"
+					},
+					{
+						"name": "server.listen()"
+					},
+					{
+						"name": "server.listening"
+					},
+					{
+						"name": "server.maxHeadersCount"
+					},
+					{
+						"name": "server.setTimeout([msecs][, callback])"
+					},
+					{
+						"name": "server.timeout"
+					},
+					{
+						"name": "server.keepAliveTimeout"
+					}
+				]
+			},
+			{
+				"name": "Class: http.ServerResponse",
+				"subitems": [
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'finish'"
+					},
+					{
+						"name": "response.addTrailers(headers)"
+					},
+					{
+						"name": "response.connection"
+					},
+					{
+						"name": "response.end([data][, encoding][, callback])"
+					},
+					{
+						"name": "response.finished"
+					},
+					{
+						"name": "response.getHeader(name)"
+					},
+					{
+						"name": "response.getHeaderNames()"
+					},
+					{
+						"name": "response.getHeaders()"
+					},
+					{
+						"name": "response.hasHeader(name)"
+					},
+					{
+						"name": "response.headersSent"
+					},
+					{
+						"name": "response.removeHeader(name)"
+					},
+					{
+						"name": "response.sendDate"
+					},
+					{
+						"name": "response.setHeader(name, value)"
+					},
+					{
+						"name": "response.setTimeout(msecs[, callback])"
+					},
+					{
+						"name": "response.socket"
+					},
+					{
+						"name": "response.statusCode"
+					},
+					{
+						"name": "response.statusMessage"
+					},
+					{
+						"name": "response.write(chunk[, encoding][, callback])"
+					},
+					{
+						"name": "response.writeContinue()"
+					},
+					{
+						"name": "response.writeHead(statusCode[, statusMessage][, headers])"
+					},
+					{
+						"name": "response.writeProcessing()"
+					}
+				]
+			},
+			{
+				"name": "Class: http.IncomingMessage",
+				"subitems": [
+					{
+						"name": "Event: 'aborted'"
+					},
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "message.aborted"
+					},
+					{
+						"name": "message.complete"
+					},
+					{
+						"name": "message.destroy([error])"
+					},
+					{
+						"name": "message.headers"
+					},
+					{
+						"name": "message.httpVersion"
+					},
+					{
+						"name": "message.method"
+					},
+					{
+						"name": "message.rawHeaders"
+					},
+					{
+						"name": "message.rawTrailers"
+					},
+					{
+						"name": "message.setTimeout(msecs, callback)"
+					},
+					{
+						"name": "message.socket"
+					},
+					{
+						"name": "message.statusCode"
+					},
+					{
+						"name": "message.statusMessage"
+					},
+					{
+						"name": "message.trailers"
+					},
+					{
+						"name": "message.url"
+					}
+				]
+			},
+			{
+				"name": "http.METHODS"
+			},
+			{
+				"name": "http.STATUS_CODES"
+			},
+			{
+				"name": "http.createServer([options][, requestListener])"
+			},
+			{
+				"name": "http.get(options[, callback])"
+			},
+			{
+				"name": "http.get(url[, options][, callback])"
+			},
+			{
+				"name": "http.globalAgent"
+			},
+			{
+				"name": "http.maxHeaderSize"
+			},
+			{
+				"name": "http.request(options[, callback])"
+			},
+			{
+				"name": "http.request(url[, options][, callback])"
+			}
+		]
+	},
+	{
+		"name": "HTTP/2",
+		"subitems": [
+			{
+				"name": "Core API",
+				"subitems": [
+					{
+						"name": "Server-side example"
+					},
+					{
+						"name": "Client-side example"
+					},
+					{
+						"name": "Class: Http2Session",
+						"subitems": [
+							{
+								"name": "Http2Session and Sockets"
+							},
+							{
+								"name": "Event: 'close'"
+							},
+							{
+								"name": "Event: 'connect'"
+							},
+							{
+								"name": "Event: 'error'"
+							},
+							{
+								"name": "Event: 'frameError'"
+							},
+							{
+								"name": "Event: 'goaway'"
+							},
+							{
+								"name": "Event: 'localSettings'"
+							},
+							{
+								"name": "Event: 'ping'"
+							},
+							{
+								"name": "Event: 'remoteSettings'"
+							},
+							{
+								"name": "Event: 'stream'"
+							},
+							{
+								"name": "Event: 'timeout'"
+							},
+							{
+								"name": "http2session.alpnProtocol"
+							},
+							{
+								"name": "http2session.close([callback])"
+							},
+							{
+								"name": "http2session.closed"
+							},
+							{
+								"name": "http2session.connecting"
+							},
+							{
+								"name": "http2session.destroy([error][, code])"
+							},
+							{
+								"name": "http2session.destroyed"
+							},
+							{
+								"name": "http2session.encrypted"
+							},
+							{
+								"name": "http2session.goaway([code[, lastStreamID[, opaqueData]]])"
+							},
+							{
+								"name": "http2session.localSettings"
+							},
+							{
+								"name": "http2session.originSet"
+							},
+							{
+								"name": "http2session.pendingSettingsAck"
+							},
+							{
+								"name": "http2session.ping([payload, ]callback)"
+							},
+							{
+								"name": "http2session.ref()"
+							},
+							{
+								"name": "http2session.remoteSettings"
+							},
+							{
+								"name": "http2session.setTimeout(msecs, callback)"
+							},
+							{
+								"name": "http2session.socket"
+							},
+							{
+								"name": "http2session.state"
+							},
+							{
+								"name": "http2session.settings([settings][, callback])"
+							},
+							{
+								"name": "http2session.type"
+							},
+							{
+								"name": "http2session.unref()"
+							}
+						]
+					},
+					{
+						"name": "Class: ServerHttp2Session",
+						"subitems": [
+							{
+								"name": "serverhttp2session.altsvc(alt, originOrStream)"
+							},
+							{
+								"name": "Specifying alternative services"
+							},
+							{
+								"name": "serverhttp2session.origin(...origins)"
+							}
+						]
+					},
+					{
+						"name": "Class: ClientHttp2Session",
+						"subitems": [
+							{
+								"name": "Event: 'altsvc'"
+							},
+							{
+								"name": "Event: 'origin'"
+							},
+							{
+								"name": "clienthttp2session.request(headers[, options])"
+							}
+						]
+					},
+					{
+						"name": "Class: Http2Stream",
+						"subitems": [
+							{
+								"name": "Http2Stream Lifecycle",
+								"subitems": [
+									{
+										"name": "Creation"
+									},
+									{
+										"name": "Destruction"
+									}
+								]
+							},
+							{
+								"name": "Event: 'aborted'"
+							},
+							{
+								"name": "Event: 'close'"
+							},
+							{
+								"name": "Event: 'error'"
+							},
+							{
+								"name": "Event: 'frameError'"
+							},
+							{
+								"name": "Event: 'timeout'"
+							},
+							{
+								"name": "Event: 'trailers'"
+							},
+							{
+								"name": "Event: 'wantTrailers'"
+							},
+							{
+								"name": "http2stream.aborted"
+							},
+							{
+								"name": "http2stream.bufferSize"
+							},
+							{
+								"name": "http2stream.close(code[, callback])"
+							},
+							{
+								"name": "http2stream.closed"
+							},
+							{
+								"name": "http2stream.destroyed"
+							},
+							{
+								"name": "http2stream.endAfterHeaders"
+							},
+							{
+								"name": "http2stream.pending"
+							},
+							{
+								"name": "http2stream.priority(options)"
+							},
+							{
+								"name": "http2stream.rstCode"
+							},
+							{
+								"name": "http2stream.sentHeaders"
+							},
+							{
+								"name": "http2stream.sentInfoHeaders"
+							},
+							{
+								"name": "http2stream.sentTrailers"
+							},
+							{
+								"name": "http2stream.session"
+							},
+							{
+								"name": "http2stream.setTimeout(msecs, callback)"
+							},
+							{
+								"name": "http2stream.state"
+							},
+							{
+								"name": "http2stream.sendTrailers(headers)"
+							}
+						]
+					},
+					{
+						"name": "Class: ClientHttp2Stream",
+						"subitems": [
+							{
+								"name": "Event: 'continue'"
+							},
+							{
+								"name": "Event: 'headers'"
+							},
+							{
+								"name": "Event: 'push'"
+							},
+							{
+								"name": "Event: 'response'"
+							}
+						]
+					},
+					{
+						"name": "Class: ServerHttp2Stream",
+						"subitems": [
+							{
+								"name": "http2stream.additionalHeaders(headers)"
+							},
+							{
+								"name": "http2stream.headersSent"
+							},
+							{
+								"name": "http2stream.pushAllowed"
+							},
+							{
+								"name": "http2stream.pushStream(headers[, options], callback)"
+							},
+							{
+								"name": "http2stream.respond([headers[, options]])"
+							},
+							{
+								"name": "http2stream.respondWithFD(fd[, headers[, options]])"
+							},
+							{
+								"name": "http2stream.respondWithFile(path[, headers[, options]])"
+							}
+						]
+					},
+					{
+						"name": "Class: Http2Server",
+						"subitems": [
+							{
+								"name": "Event: 'checkContinue'"
+							},
+							{
+								"name": "Event: 'request'"
+							},
+							{
+								"name": "Event: 'session'"
+							},
+							{
+								"name": "Event: 'sessionError'"
+							},
+							{
+								"name": "Event: 'stream'"
+							},
+							{
+								"name": "Event: 'timeout'"
+							},
+							{
+								"name": "server.close([callback])"
+							},
+							{
+								"name": "server.setTimeout([msecs][, callback])"
+							}
+						]
+					},
+					{
+						"name": "Class: Http2SecureServer",
+						"subitems": [
+							{
+								"name": "Event: 'checkContinue'"
+							},
+							{
+								"name": "Event: 'request'"
+							},
+							{
+								"name": "Event: 'session'"
+							},
+							{
+								"name": "Event: 'sessionError'"
+							},
+							{
+								"name": "Event: 'stream'"
+							},
+							{
+								"name": "Event: 'timeout'"
+							},
+							{
+								"name": "Event: 'unknownProtocol'"
+							},
+							{
+								"name": "server.close([callback])"
+							},
+							{
+								"name": "server.setTimeout([msecs][, callback])"
+							}
+						]
+					},
+					{
+						"name": "http2.createServer(options[, onRequestHandler])"
+					},
+					{
+						"name": "http2.createSecureServer(options[, onRequestHandler])"
+					},
+					{
+						"name": "http2.connect(authority[, options][, listener])"
+					},
+					{
+						"name": "http2.constants",
+						"subitems": [
+							{
+								"name": "Error Codes for RST_STREAM and GOAWAY"
+							}
+						]
+					},
+					{
+						"name": "http2.getDefaultSettings()"
+					},
+					{
+						"name": "http2.getPackedSettings([settings])"
+					},
+					{
+						"name": "http2.getUnpackedSettings(buf)"
+					},
+					{
+						"name": "Headers Object"
+					},
+					{
+						"name": "Settings Object"
+					},
+					{
+						"name": "Using options.selectPadding()"
+					},
+					{
+						"name": "Error Handling"
+					},
+					{
+						"name": "Invalid character handling in header names and values"
+					},
+					{
+						"name": "Push streams on the client"
+					},
+					{
+						"name": "Supporting the CONNECT method"
+					},
+					{
+						"name": "The Extended CONNECT Protocol"
+					}
+				]
+			},
+			{
+				"name": "Compatibility API",
+				"subitems": [
+					{
+						"name": "ALPN negotiation"
+					},
+					{
+						"name": "Class: http2.Http2ServerRequest",
+						"subitems": [
+							{
+								"name": "Event: 'aborted'"
+							},
+							{
+								"name": "Event: 'close'"
+							},
+							{
+								"name": "request.aborted"
+							},
+							{
+								"name": "request.authority"
+							},
+							{
+								"name": "request.destroy([error])"
+							},
+							{
+								"name": "request.headers"
+							},
+							{
+								"name": "request.httpVersion"
+							},
+							{
+								"name": "request.method"
+							},
+							{
+								"name": "request.rawHeaders"
+							},
+							{
+								"name": "request.rawTrailers"
+							},
+							{
+								"name": "request.scheme"
+							},
+							{
+								"name": "request.setTimeout(msecs, callback)"
+							},
+							{
+								"name": "request.socket"
+							},
+							{
+								"name": "request.stream"
+							},
+							{
+								"name": "request.trailers"
+							},
+							{
+								"name": "request.url"
+							}
+						]
+					},
+					{
+						"name": "Class: http2.Http2ServerResponse",
+						"subitems": [
+							{
+								"name": "Event: 'close'"
+							},
+							{
+								"name": "Event: 'finish'"
+							},
+							{
+								"name": "response.addTrailers(headers)"
+							},
+							{
+								"name": "response.connection"
+							},
+							{
+								"name": "response.end([data][, encoding][, callback])"
+							},
+							{
+								"name": "response.finished"
+							},
+							{
+								"name": "response.getHeader(name)"
+							},
+							{
+								"name": "response.getHeaderNames()"
+							},
+							{
+								"name": "response.getHeaders()"
+							},
+							{
+								"name": "response.hasHeader(name)"
+							},
+							{
+								"name": "response.headersSent"
+							},
+							{
+								"name": "response.removeHeader(name)"
+							},
+							{
+								"name": "response.sendDate"
+							},
+							{
+								"name": "response.setHeader(name, value)"
+							},
+							{
+								"name": "response.setTimeout(msecs[, callback])"
+							},
+							{
+								"name": "response.socket"
+							},
+							{
+								"name": "response.statusCode"
+							},
+							{
+								"name": "response.statusMessage"
+							},
+							{
+								"name": "response.stream"
+							},
+							{
+								"name": "response.write(chunk[, encoding][, callback])"
+							},
+							{
+								"name": "response.writeContinue()"
+							},
+							{
+								"name": "response.writeHead(statusCode[, statusMessage][, headers])"
+							},
+							{
+								"name": "response.createPushResponse(headers, callback)"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Collecting HTTP/2 Performance Metrics"
+			}
+		]
+	},
+	{
+		"name": "HTTPS",
+		"subitems": [
+			{
+				"name": "Class: https.Agent",
+				"subitems": [
+					{
+						"name": "new Agent([options])"
+					}
+				]
+			},
+			{
+				"name": "Class: https.Server",
+				"subitems": [
+					{
+						"name": "server.close([callback])"
+					},
+					{
+						"name": "server.headersTimeout"
+					},
+					{
+						"name": "server.listen()"
+					},
+					{
+						"name": "server.maxHeadersCount"
+					},
+					{
+						"name": "server.setTimeout([msecs][, callback])"
+					},
+					{
+						"name": "server.timeout"
+					},
+					{
+						"name": "server.keepAliveTimeout"
+					}
+				]
+			},
+			{
+				"name": "https.createServer([options][, requestListener])"
+			},
+			{
+				"name": "https.get(options[, callback])"
+			},
+			{
+				"name": "https.get(url[, options][, callback])"
+			},
+			{
+				"name": "https.globalAgent"
+			},
+			{
+				"name": "https.request(options[, callback])"
+			},
+			{
+				"name": "https.request(url[, options][, callback])"
+			}
+		]
+	},
+	{
+		"name": "Inspector",
+		"subitems": [
+			{
+				"name": "inspector.close()"
+			},
+			{
+				"name": "inspector.console"
+			},
+			{
+				"name": "inspector.open([port[, host[, wait]]])"
+			},
+			{
+				"name": "inspector.url()"
+			},
+			{
+				"name": "Class: inspector.Session",
+				"subitems": [
+					{
+						"name": "Constructor: new inspector.Session()"
+					},
+					{
+						"name": "Event: 'inspectorNotification'"
+					},
+					{
+						"name": "Event: <inspector-protocol-method>"
+					},
+					{
+						"name": "session.connect()"
+					},
+					{
+						"name": "session.disconnect()"
+					},
+					{
+						"name": "session.post(method[, params][, callback])"
+					}
+				]
+			},
+			{
+				"name": "Example usage",
+				"subitems": [
+					{
+						"name": "CPU Profiler"
+					},
+					{
+						"name": "Heap Profiler"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Internationalization Support",
+		"subitems": [
+			{
+				"name": "Options for building Node.js",
+				"subitems": [
+					{
+						"name": "Disable all internationalization features (none)"
+					},
+					{
+						"name": "Build with a pre-installed ICU (system-icu)"
+					},
+					{
+						"name": "Embed a limited set of ICU data (small-icu)",
+						"subitems": [
+							{
+								"name": "Providing ICU data at runtime"
+							}
+						]
+					},
+					{
+						"name": "Embed the entire ICU (full-icu)"
+					}
+				]
+			},
+			{
+				"name": "Detecting internationalization support"
+			}
+		]
+	},
+	{
+		"name": "Modules",
+		"subitems": [
+			{
+				"name": "Accessing the main module"
+			},
+			{
+				"name": "Addenda: Package Manager Tips"
+			},
+			{
+				"name": "All Together..."
+			},
+			{
+				"name": "Caching",
+				"subitems": [
+					{
+						"name": "Module Caching Caveats"
+					}
+				]
+			},
+			{
+				"name": "Core Modules"
+			},
+			{
+				"name": "Cycles"
+			},
+			{
+				"name": "File Modules"
+			},
+			{
+				"name": "Folders as Modules"
+			},
+			{
+				"name": "Loading from node_modules Folders"
+			},
+			{
+				"name": "Loading from the global folders"
+			},
+			{
+				"name": "The module wrapper"
+			},
+			{
+				"name": "The module scope",
+				"subitems": [
+					{
+						"name": "__dirname"
+					},
+					{
+						"name": "__filename"
+					},
+					{
+						"name": "exports"
+					},
+					{
+						"name": "module"
+					},
+					{
+						"name": "require(id)",
+						"subitems": [
+							{
+								"name": "require.cache"
+							},
+							{
+								"name": "require.extensions"
+							},
+							{
+								"name": "require.main"
+							},
+							{
+								"name": "require.resolve(request[, options])",
+								"subitems": [
+									{
+										"name": "require.resolve.paths(request)"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "The module Object",
+				"subitems": [
+					{
+						"name": "module.children"
+					},
+					{
+						"name": "module.exports",
+						"subitems": [
+							{
+								"name": "exports shortcut"
+							}
+						]
+					},
+					{
+						"name": "module.filename"
+					},
+					{
+						"name": "module.id"
+					},
+					{
+						"name": "module.loaded"
+					},
+					{
+						"name": "module.parent"
+					},
+					{
+						"name": "module.paths"
+					},
+					{
+						"name": "module.require(id)"
+					}
+				]
+			},
+			{
+				"name": "The Module Object",
+				"subitems": [
+					{
+						"name": "module.builtinModules"
+					},
+					{
+						"name": "module.createRequireFromPath(filename)"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Net",
+		"subitems": [
+			{
+				"name": "IPC Support",
+				"subitems": [
+					{
+						"name": "Identifying paths for IPC connections"
+					}
+				]
+			},
+			{
+				"name": "Class: net.Server",
+				"subitems": [
+					{
+						"name": "new net.Server([options][, connectionListener])"
+					},
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'connection'"
+					},
+					{
+						"name": "Event: 'error'"
+					},
+					{
+						"name": "Event: 'listening'"
+					},
+					{
+						"name": "server.address()"
+					},
+					{
+						"name": "server.close([callback])"
+					},
+					{
+						"name": "server.connections"
+					},
+					{
+						"name": "server.getConnections(callback)"
+					},
+					{
+						"name": "server.listen()",
+						"subitems": [
+							{
+								"name": "server.listen(handle[, backlog][, callback])"
+							},
+							{
+								"name": "server.listen(options[, callback])"
+							},
+							{
+								"name": "server.listen(path[, backlog][, callback])"
+							},
+							{
+								"name": "server.listen([port[, host[, backlog]]][, callback])"
+							}
+						]
+					},
+					{
+						"name": "server.listening"
+					},
+					{
+						"name": "server.maxConnections"
+					},
+					{
+						"name": "server.ref()"
+					},
+					{
+						"name": "server.unref()"
+					}
+				]
+			},
+			{
+				"name": "Class: net.Socket",
+				"subitems": [
+					{
+						"name": "new net.Socket([options])"
+					},
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'connect'"
+					},
+					{
+						"name": "Event: 'data'"
+					},
+					{
+						"name": "Event: 'drain'"
+					},
+					{
+						"name": "Event: 'end'"
+					},
+					{
+						"name": "Event: 'error'"
+					},
+					{
+						"name": "Event: 'lookup'"
+					},
+					{
+						"name": "Event: 'ready'"
+					},
+					{
+						"name": "Event: 'timeout'"
+					},
+					{
+						"name": "socket.address()"
+					},
+					{
+						"name": "socket.bufferSize"
+					},
+					{
+						"name": "socket.bytesRead"
+					},
+					{
+						"name": "socket.bytesWritten"
+					},
+					{
+						"name": "socket.connect()",
+						"subitems": [
+							{
+								"name": "socket.connect(options[, connectListener])"
+							},
+							{
+								"name": "socket.connect(path[, connectListener])"
+							},
+							{
+								"name": "socket.connect(port[, host][, connectListener])"
+							}
+						]
+					},
+					{
+						"name": "socket.connecting"
+					},
+					{
+						"name": "socket.destroy([exception])"
+					},
+					{
+						"name": "socket.destroyed"
+					},
+					{
+						"name": "socket.end([data][, encoding][, callback])"
+					},
+					{
+						"name": "socket.localAddress"
+					},
+					{
+						"name": "socket.localPort"
+					},
+					{
+						"name": "socket.pause()"
+					},
+					{
+						"name": "socket.pending"
+					},
+					{
+						"name": "socket.ref()"
+					},
+					{
+						"name": "socket.remoteAddress"
+					},
+					{
+						"name": "socket.remoteFamily"
+					},
+					{
+						"name": "socket.remotePort"
+					},
+					{
+						"name": "socket.resume()"
+					},
+					{
+						"name": "socket.setEncoding([encoding])"
+					},
+					{
+						"name": "socket.setKeepAlive([enable][, initialDelay])"
+					},
+					{
+						"name": "socket.setNoDelay([noDelay])"
+					},
+					{
+						"name": "socket.setTimeout(timeout[, callback])"
+					},
+					{
+						"name": "socket.unref()"
+					},
+					{
+						"name": "socket.write(data[, encoding][, callback])"
+					}
+				]
+			},
+			{
+				"name": "net.connect()",
+				"subitems": [
+					{
+						"name": "net.connect(options[, connectListener])"
+					},
+					{
+						"name": "net.connect(path[, connectListener])"
+					},
+					{
+						"name": "net.connect(port[, host][, connectListener])"
+					}
+				]
+			},
+			{
+				"name": "net.createConnection()",
+				"subitems": [
+					{
+						"name": "net.createConnection(options[, connectListener])"
+					},
+					{
+						"name": "net.createConnection(path[, connectListener])"
+					},
+					{
+						"name": "net.createConnection(port[, host][, connectListener])"
+					}
+				]
+			},
+			{
+				"name": "net.createServer([options][, connectionListener])"
+			},
+			{
+				"name": "net.isIP(input)"
+			},
+			{
+				"name": "net.isIPv4(input)"
+			},
+			{
+				"name": "net.isIPv6(input)"
+			}
+		]
+	},
+	{
+		"name": "OS",
+		"subitems": [
+			{
+				"name": "os.EOL"
+			},
+			{
+				"name": "os.arch()"
+			},
+			{
+				"name": "os.constants"
+			},
+			{
+				"name": "os.cpus()"
+			},
+			{
+				"name": "os.endianness()"
+			},
+			{
+				"name": "os.freemem()"
+			},
+			{
+				"name": "os.getPriority([pid])"
+			},
+			{
+				"name": "os.homedir()"
+			},
+			{
+				"name": "os.hostname()"
+			},
+			{
+				"name": "os.loadavg()"
+			},
+			{
+				"name": "os.networkInterfaces()"
+			},
+			{
+				"name": "os.platform()"
+			},
+			{
+				"name": "os.release()"
+			},
+			{
+				"name": "os.setPriority([pid, ]priority)"
+			},
+			{
+				"name": "os.tmpdir()"
+			},
+			{
+				"name": "os.totalmem()"
+			},
+			{
+				"name": "os.type()"
+			},
+			{
+				"name": "os.uptime()"
+			},
+			{
+				"name": "os.userInfo([options])"
+			},
+			{
+				"name": "OS Constants",
+				"subitems": [
+					{
+						"name": "Signal Constants"
+					},
+					{
+						"name": "Error Constants",
+						"subitems": [
+							{
+								"name": "POSIX Error Constants"
+							},
+							{
+								"name": "Windows Specific Error Constants"
+							}
+						]
+					},
+					{
+						"name": "dlopen Constants"
+					},
+					{
+						"name": "Priority Constants"
+					},
+					{
+						"name": "libuv Constants"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Path",
+		"subitems": [
+			{
+				"name": "Windows vs. POSIX"
+			},
+			{
+				"name": "path.basename(path[, ext])"
+			},
+			{
+				"name": "path.delimiter"
+			},
+			{
+				"name": "path.dirname(path)"
+			},
+			{
+				"name": "path.extname(path)"
+			},
+			{
+				"name": "path.format(pathObject)"
+			},
+			{
+				"name": "path.isAbsolute(path)"
+			},
+			{
+				"name": "path.join([...paths])"
+			},
+			{
+				"name": "path.normalize(path)"
+			},
+			{
+				"name": "path.parse(path)"
+			},
+			{
+				"name": "path.posix"
+			},
+			{
+				"name": "path.relative(from, to)"
+			},
+			{
+				"name": "path.resolve([...paths])"
+			},
+			{
+				"name": "path.sep"
+			},
+			{
+				"name": "path.toNamespacedPath(path)"
+			},
+			{
+				"name": "path.win32"
+			}
+		]
+	},
+	{
+		"name": "Performance Timing API",
+		"subitems": [
+			{
+				"name": "Class: Performance",
+				"subitems": [
+					{
+						"name": "performance.clearMarks([name])"
+					},
+					{
+						"name": "performance.mark([name])"
+					},
+					{
+						"name": "performance.measure(name, startMark, endMark)"
+					},
+					{
+						"name": "performance.nodeTiming"
+					},
+					{
+						"name": "performance.now()"
+					},
+					{
+						"name": "performance.timeOrigin"
+					},
+					{
+						"name": "performance.timerify(fn)"
+					}
+				]
+			},
+			{
+				"name": "Class: PerformanceEntry",
+				"subitems": [
+					{
+						"name": "performanceEntry.duration"
+					},
+					{
+						"name": "performanceEntry.name"
+					},
+					{
+						"name": "performanceEntry.startTime"
+					},
+					{
+						"name": "performanceEntry.entryType"
+					},
+					{
+						"name": "performanceEntry.kind"
+					}
+				]
+			},
+			{
+				"name": "Class: PerformanceNodeTiming extends PerformanceEntry",
+				"subitems": [
+					{
+						"name": "performanceNodeTiming.bootstrapComplete"
+					},
+					{
+						"name": "performanceNodeTiming.loopExit"
+					},
+					{
+						"name": "performanceNodeTiming.loopStart"
+					},
+					{
+						"name": "performanceNodeTiming.nodeStart"
+					},
+					{
+						"name": "performanceNodeTiming.v8Start"
+					}
+				]
+			},
+			{
+				"name": "Class: PerformanceObserver",
+				"subitems": [
+					{
+						"name": "new PerformanceObserver(callback)"
+					},
+					{
+						"name": "performanceObserver.disconnect()"
+					},
+					{
+						"name": "performanceObserver.observe(options)"
+					}
+				]
+			},
+			{
+				"name": "Class: PerformanceObserverEntryList",
+				"subitems": [
+					{
+						"name": "performanceObserverEntryList.getEntries()"
+					},
+					{
+						"name": "performanceObserverEntryList.getEntriesByName(name[, type])"
+					},
+					{
+						"name": "performanceObserverEntryList.getEntriesByType(type)"
+					}
+				]
+			},
+			{
+				"name": "perf_hooks.monitorEventLoopDelay([options])",
+				"subitems": [
+					{
+						"name": "Class: Histogram",
+						"subitems": [
+							{
+								"name": "histogram.disable()"
+							},
+							{
+								"name": "histogram.enable()"
+							},
+							{
+								"name": "histogram.exceeds"
+							},
+							{
+								"name": "histogram.max"
+							},
+							{
+								"name": "histogram.mean"
+							},
+							{
+								"name": "histogram.min"
+							},
+							{
+								"name": "histogram.percentile(percentile)"
+							},
+							{
+								"name": "histogram.percentiles"
+							},
+							{
+								"name": "histogram.reset()"
+							},
+							{
+								"name": "histogram.stddev"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Examples",
+				"subitems": [
+					{
+						"name": "Measuring the duration of async operations"
+					},
+					{
+						"name": "Measuring how long it takes to load dependencies"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Policies",
+		"subitems": [
+			{
+				"name": "Enabling"
+			},
+			{
+				"name": "Features",
+				"subitems": [
+					{
+						"name": "Error Behavior"
+					},
+					{
+						"name": "Integrity Checks"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Process",
+		"subitems": [
+			{
+				"name": "Process Events",
+				"subitems": [
+					{
+						"name": "Event: 'beforeExit'"
+					},
+					{
+						"name": "Event: 'disconnect'"
+					},
+					{
+						"name": "Event: 'exit'"
+					},
+					{
+						"name": "Event: 'message'"
+					},
+					{
+						"name": "Event: 'multipleResolves'"
+					},
+					{
+						"name": "Event: 'rejectionHandled'"
+					},
+					{
+						"name": "Event: 'uncaughtException'",
+						"subitems": [
+							{
+								"name": "Warning: Using 'uncaughtException' correctly"
+							}
+						]
+					},
+					{
+						"name": "Event: 'unhandledRejection'"
+					},
+					{
+						"name": "Event: 'warning'",
+						"subitems": [
+							{
+								"name": "Emitting custom warnings"
+							}
+						]
+					},
+					{
+						"name": "Signal Events"
+					}
+				]
+			},
+			{
+				"name": "process.abort()"
+			},
+			{
+				"name": "process.allowedNodeEnvironmentFlags"
+			},
+			{
+				"name": "process.arch"
+			},
+			{
+				"name": "process.argv"
+			},
+			{
+				"name": "process.argv0"
+			},
+			{
+				"name": "process.channel"
+			},
+			{
+				"name": "process.chdir(directory)"
+			},
+			{
+				"name": "process.config"
+			},
+			{
+				"name": "process.connected"
+			},
+			{
+				"name": "process.cpuUsage([previousValue])"
+			},
+			{
+				"name": "process.cwd()"
+			},
+			{
+				"name": "process.debugPort"
+			},
+			{
+				"name": "process.disconnect()"
+			},
+			{
+				"name": "process.dlopen(module, filename[, flags])"
+			},
+			{
+				"name": "process.emitWarning(warning[, options])"
+			},
+			{
+				"name": "process.emitWarning(warning[, type[, code]][, ctor])",
+				"subitems": [
+					{
+						"name": "Avoiding duplicate warnings"
+					}
+				]
+			},
+			{
+				"name": "process.env"
+			},
+			{
+				"name": "process.execArgv"
+			},
+			{
+				"name": "process.execPath"
+			},
+			{
+				"name": "process.exit([code])"
+			},
+			{
+				"name": "process.exitCode"
+			},
+			{
+				"name": "process.getegid()"
+			},
+			{
+				"name": "process.geteuid()"
+			},
+			{
+				"name": "process.getgid()"
+			},
+			{
+				"name": "process.getgroups()"
+			},
+			{
+				"name": "process.getuid()"
+			},
+			{
+				"name": "process.hasUncaughtExceptionCaptureCallback()"
+			},
+			{
+				"name": "process.hrtime([time])"
+			},
+			{
+				"name": "process.hrtime.bigint()"
+			},
+			{
+				"name": "process.initgroups(user, extraGroup)"
+			},
+			{
+				"name": "process.kill(pid[, signal])"
+			},
+			{
+				"name": "process.mainModule"
+			},
+			{
+				"name": "process.memoryUsage()"
+			},
+			{
+				"name": "process.nextTick(callback[, ...args])"
+			},
+			{
+				"name": "process.noDeprecation"
+			},
+			{
+				"name": "process.pid"
+			},
+			{
+				"name": "process.platform"
+			},
+			{
+				"name": "process.ppid"
+			},
+			{
+				"name": "process.release"
+			},
+			{
+				"name": "process.report",
+				"subitems": [
+					{
+						"name": "process.report.directory"
+					},
+					{
+						"name": "process.report.filename"
+					},
+					{
+						"name": "process.report.getReport([err])"
+					},
+					{
+						"name": "process.report.reportOnFatalError"
+					},
+					{
+						"name": "process.report.reportOnSignal"
+					},
+					{
+						"name": "process.report.reportOnUncaughtException"
+					},
+					{
+						"name": "process.report.signal"
+					},
+					{
+						"name": "process.report.writeReport([filename][, err])"
+					}
+				]
+			},
+			{
+				"name": "process.send(message[, sendHandle[, options]][, callback])"
+			},
+			{
+				"name": "process.setegid(id)"
+			},
+			{
+				"name": "process.seteuid(id)"
+			},
+			{
+				"name": "process.setgid(id)"
+			},
+			{
+				"name": "process.setgroups(groups)"
+			},
+			{
+				"name": "process.setuid(id)"
+			},
+			{
+				"name": "process.setUncaughtExceptionCaptureCallback(fn)"
+			},
+			{
+				"name": "process.stderr"
+			},
+			{
+				"name": "process.stdin"
+			},
+			{
+				"name": "process.stdout",
+				"subitems": [
+					{
+						"name": "A note on process I/O"
+					}
+				]
+			},
+			{
+				"name": "process.throwDeprecation"
+			},
+			{
+				"name": "process.title"
+			},
+			{
+				"name": "process.traceDeprecation"
+			},
+			{
+				"name": "process.umask([mask])"
+			},
+			{
+				"name": "process.uptime()"
+			},
+			{
+				"name": "process.version"
+			},
+			{
+				"name": "process.versions"
+			},
+			{
+				"name": "Exit Codes"
+			}
+		]
+	},
+	{
+		"name": "Punycode",
+		"subitems": [
+			{
+				"name": "punycode.decode(string)"
+			},
+			{
+				"name": "punycode.encode(string)"
+			},
+			{
+				"name": "punycode.toASCII(domain)"
+			},
+			{
+				"name": "punycode.toUnicode(domain)"
+			},
+			{
+				"name": "punycode.ucs2",
+				"subitems": [
+					{
+						"name": "punycode.ucs2.decode(string)"
+					},
+					{
+						"name": "punycode.ucs2.encode(codePoints)"
+					}
+				]
+			},
+			{
+				"name": "punycode.version"
+			}
+		]
+	},
+	{
+		"name": "Query String",
+		"subitems": [
+			{
+				"name": "querystring.decode()"
+			},
+			{
+				"name": "querystring.encode()"
+			},
+			{
+				"name": "querystring.escape(str)"
+			},
+			{
+				"name": "querystring.parse(str[, sep[, eq[, options]]])"
+			},
+			{
+				"name": "querystring.stringify(obj[, sep[, eq[, options]]])"
+			},
+			{
+				"name": "querystring.unescape(str)"
+			}
+		]
+	},
+	{
+		"name": "Readline",
+		"subitems": [
+			{
+				"name": "Class: Interface",
+				"subitems": [
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'line'"
+					},
+					{
+						"name": "Event: 'pause'"
+					},
+					{
+						"name": "Event: 'resume'"
+					},
+					{
+						"name": "Event: 'SIGCONT'"
+					},
+					{
+						"name": "Event: 'SIGINT'"
+					},
+					{
+						"name": "Event: 'SIGTSTP'"
+					},
+					{
+						"name": "rl.close()"
+					},
+					{
+						"name": "rl.pause()"
+					},
+					{
+						"name": "rl.prompt([preserveCursor])"
+					},
+					{
+						"name": "rl.question(query, callback)"
+					},
+					{
+						"name": "rl.resume()"
+					},
+					{
+						"name": "rl.setPrompt(prompt)"
+					},
+					{
+						"name": "rl.write(data[, key])"
+					},
+					{
+						"name": "rl[Symbol.asyncIterator]()"
+					}
+				]
+			},
+			{
+				"name": "readline.clearLine(stream, dir)"
+			},
+			{
+				"name": "readline.clearScreenDown(stream)"
+			},
+			{
+				"name": "readline.createInterface(options)",
+				"subitems": [
+					{
+						"name": "Use of the completer Function"
+					}
+				]
+			},
+			{
+				"name": "readline.cursorTo(stream, x, y)"
+			},
+			{
+				"name": "readline.emitKeypressEvents(stream[, interface])"
+			},
+			{
+				"name": "readline.moveCursor(stream, dx, dy)"
+			},
+			{
+				"name": "Example: Tiny CLI"
+			},
+			{
+				"name": "Example: Read File Stream Line-by-Line"
+			}
+		]
+	},
+	{
+		"name": "REPL",
+		"subitems": [
+			{
+				"name": "Design and Features",
+				"subitems": [
+					{
+						"name": "Commands and Special Keys"
+					},
+					{
+						"name": "Default Evaluation",
+						"subitems": [
+							{
+								"name": "JavaScript Expressions"
+							},
+							{
+								"name": "Global and Local Scope"
+							},
+							{
+								"name": "Accessing Core Node.js Modules"
+							},
+							{
+								"name": "Global Uncaught Exceptions"
+							},
+							{
+								"name": "Assignment of the _ (underscore) variable"
+							},
+							{
+								"name": "await keyword"
+							}
+						]
+					},
+					{
+						"name": "Custom Evaluation Functions",
+						"subitems": [
+							{
+								"name": "Recoverable Errors"
+							}
+						]
+					},
+					{
+						"name": "Customizing REPL Output"
+					}
+				]
+			},
+			{
+				"name": "Class: REPLServer",
+				"subitems": [
+					{
+						"name": "Event: 'exit'"
+					},
+					{
+						"name": "Event: 'reset'"
+					},
+					{
+						"name": "replServer.defineCommand(keyword, cmd)"
+					},
+					{
+						"name": "replServer.displayPrompt([preserveCursor])"
+					},
+					{
+						"name": "replServer.clearBufferedCommand()"
+					},
+					{
+						"name": "replServer.parseREPLKeyword(keyword[, rest])"
+					},
+					{
+						"name": "replServer.setupHistory(historyPath, callback)"
+					}
+				]
+			},
+			{
+				"name": "repl.start([options])"
+			},
+			{
+				"name": "The Node.js REPL",
+				"subitems": [
+					{
+						"name": "Environment Variable Options"
+					},
+					{
+						"name": "Persistent History"
+					},
+					{
+						"name": "Using the Node.js REPL with advanced line-editors"
+					},
+					{
+						"name": "Starting multiple REPL instances against a single running instance"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Diagnostic Report",
+		"subitems": [
+			{
+				"name": "Usage"
+			},
+			{
+				"name": "Configuration"
+			}
+		]
+	},
+	{
+		"name": "Stream",
+		"subitems": [
+			{
+				"name": "Organization of this Document"
+			},
+			{
+				"name": "Types of Streams",
+				"subitems": [
+					{
+						"name": "Object Mode"
+					},
+					{
+						"name": "Buffering"
+					}
+				]
+			},
+			{
+				"name": "API for Stream Consumers",
+				"subitems": [
+					{
+						"name": "Writable Streams",
+						"subitems": [
+							{
+								"name": "Class: stream.Writable",
+								"subitems": [
+									{
+										"name": "Event: 'close'"
+									},
+									{
+										"name": "Event: 'drain'"
+									},
+									{
+										"name": "Event: 'error'"
+									},
+									{
+										"name": "Event: 'finish'"
+									},
+									{
+										"name": "Event: 'pipe'"
+									},
+									{
+										"name": "Event: 'unpipe'"
+									},
+									{
+										"name": "writable.cork()"
+									},
+									{
+										"name": "writable.destroy([error])"
+									},
+									{
+										"name": "writable.end([chunk][, encoding][, callback])"
+									},
+									{
+										"name": "writable.setDefaultEncoding(encoding)"
+									},
+									{
+										"name": "writable.uncork()"
+									},
+									{
+										"name": "writable.writable"
+									},
+									{
+										"name": "writable.writableHighWaterMark"
+									},
+									{
+										"name": "writable.writableLength"
+									},
+									{
+										"name": "writable.write(chunk[, encoding][, callback])"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "Readable Streams",
+						"subitems": [
+							{
+								"name": "Two Reading Modes"
+							},
+							{
+								"name": "Three States"
+							},
+							{
+								"name": "Choose One API Style"
+							},
+							{
+								"name": "Class: stream.Readable",
+								"subitems": [
+									{
+										"name": "Event: 'close'"
+									},
+									{
+										"name": "Event: 'data'"
+									},
+									{
+										"name": "Event: 'end'"
+									},
+									{
+										"name": "Event: 'error'"
+									},
+									{
+										"name": "Event: 'readable'"
+									},
+									{
+										"name": "readable.destroy([error])"
+									},
+									{
+										"name": "readable.isPaused()"
+									},
+									{
+										"name": "readable.pause()"
+									},
+									{
+										"name": "readable.pipe(destination[, options])"
+									},
+									{
+										"name": "readable.read([size])"
+									},
+									{
+										"name": "readable.readable"
+									},
+									{
+										"name": "readable.readableHighWaterMark"
+									},
+									{
+										"name": "readable.readableLength"
+									},
+									{
+										"name": "readable.resume()"
+									},
+									{
+										"name": "readable.setEncoding(encoding)"
+									},
+									{
+										"name": "readable.unpipe([destination])"
+									},
+									{
+										"name": "readable.unshift(chunk)"
+									},
+									{
+										"name": "readable.wrap(stream)"
+									},
+									{
+										"name": "readable[Symbol.asyncIterator]()"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "Duplex and Transform Streams",
+						"subitems": [
+							{
+								"name": "Class: stream.Duplex"
+							},
+							{
+								"name": "Class: stream.Transform",
+								"subitems": [
+									{
+										"name": "transform.destroy([error])"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "stream.finished(stream[, options], callback)"
+					},
+					{
+						"name": "stream.pipeline(...streams, callback)"
+					}
+				]
+			},
+			{
+				"name": "API for Stream Implementers",
+				"subitems": [
+					{
+						"name": "Simplified Construction"
+					},
+					{
+						"name": "Implementing a Writable Stream",
+						"subitems": [
+							{
+								"name": "Constructor: new stream.Writable([options])"
+							},
+							{
+								"name": "writable._write(chunk, encoding, callback)"
+							},
+							{
+								"name": "writable._writev(chunks, callback)"
+							},
+							{
+								"name": "writable._destroy(err, callback)"
+							},
+							{
+								"name": "writable._final(callback)"
+							},
+							{
+								"name": "Errors While Writing"
+							},
+							{
+								"name": "An Example Writable Stream"
+							},
+							{
+								"name": "Decoding buffers in a Writable Stream"
+							}
+						]
+					},
+					{
+						"name": "Implementing a Readable Stream",
+						"subitems": [
+							{
+								"name": "new stream.Readable([options])"
+							},
+							{
+								"name": "readable._read(size)"
+							},
+							{
+								"name": "readable._destroy(err, callback)"
+							},
+							{
+								"name": "readable.push(chunk[, encoding])"
+							},
+							{
+								"name": "Errors While Reading"
+							},
+							{
+								"name": "An Example Counting Stream"
+							}
+						]
+					},
+					{
+						"name": "Implementing a Duplex Stream",
+						"subitems": [
+							{
+								"name": "new stream.Duplex(options)"
+							},
+							{
+								"name": "An Example Duplex Stream"
+							},
+							{
+								"name": "Object Mode Duplex Streams"
+							}
+						]
+					},
+					{
+						"name": "Implementing a Transform Stream",
+						"subitems": [
+							{
+								"name": "new stream.Transform([options])"
+							},
+							{
+								"name": "Events: 'finish' and 'end'"
+							},
+							{
+								"name": "transform._flush(callback)"
+							},
+							{
+								"name": "transform._transform(chunk, encoding, callback)"
+							},
+							{
+								"name": "Class: stream.PassThrough"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Additional Notes",
+				"subitems": [
+					{
+						"name": "Compatibility with Older Node.js Versions"
+					},
+					{
+						"name": "readable.read(0)"
+					},
+					{
+						"name": "readable.push('')"
+					},
+					{
+						"name": "highWaterMark discrepancy after calling readable.setEncoding()"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "String Decoder",
+		"subitems": [
+			{
+				"name": "Class: StringDecoder",
+				"subitems": [
+					{
+						"name": "new StringDecoder([encoding])"
+					},
+					{
+						"name": "stringDecoder.end([buffer])"
+					},
+					{
+						"name": "stringDecoder.write(buffer)"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Timers",
+		"subitems": [
+			{
+				"name": "Class: Immediate",
+				"subitems": [
+					{
+						"name": "immediate.hasRef()"
+					},
+					{
+						"name": "immediate.ref()"
+					},
+					{
+						"name": "immediate.unref()"
+					}
+				]
+			},
+			{
+				"name": "Class: Timeout",
+				"subitems": [
+					{
+						"name": "timeout.hasRef()"
+					},
+					{
+						"name": "timeout.ref()"
+					},
+					{
+						"name": "timeout.refresh()"
+					},
+					{
+						"name": "timeout.unref()"
+					}
+				]
+			},
+			{
+				"name": "Scheduling Timers",
+				"subitems": [
+					{
+						"name": "setImmediate(callback[, ...args])"
+					},
+					{
+						"name": "setInterval(callback, delay[, ...args])"
+					},
+					{
+						"name": "setTimeout(callback, delay[, ...args])"
+					}
+				]
+			},
+			{
+				"name": "Cancelling Timers",
+				"subitems": [
+					{
+						"name": "clearImmediate(immediate)"
+					},
+					{
+						"name": "clearInterval(timeout)"
+					},
+					{
+						"name": "clearTimeout(timeout)"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "TLS (SSL)",
+		"subitems": [
+			{
+				"name": "TLS/SSL Concepts",
+				"subitems": [
+					{
+						"name": "Perfect Forward Secrecy"
+					},
+					{
+						"name": "ALPN and SNI"
+					},
+					{
+						"name": "Client-initiated renegotiation attack mitigation"
+					},
+					{
+						"name": "Session Resumption"
+					}
+				]
+			},
+			{
+				"name": "Modifying the Default TLS Cipher suite"
+			},
+			{
+				"name": "Class: tls.Server",
+				"subitems": [
+					{
+						"name": "Event: 'newSession'"
+					},
+					{
+						"name": "Event: 'OCSPRequest'"
+					},
+					{
+						"name": "Event: 'resumeSession'"
+					},
+					{
+						"name": "Event: 'secureConnection'"
+					},
+					{
+						"name": "Event: 'tlsClientError'"
+					},
+					{
+						"name": "server.addContext(hostname, context)"
+					},
+					{
+						"name": "server.address()"
+					},
+					{
+						"name": "server.close([callback])"
+					},
+					{
+						"name": "server.connections"
+					},
+					{
+						"name": "server.getTicketKeys()"
+					},
+					{
+						"name": "server.listen()"
+					},
+					{
+						"name": "server.setSecureContext(options)"
+					},
+					{
+						"name": "server.setTicketKeys(keys)"
+					}
+				]
+			},
+			{
+				"name": "Class: tls.TLSSocket",
+				"subitems": [
+					{
+						"name": "new tls.TLSSocket(socket[, options])"
+					},
+					{
+						"name": "Event: 'OCSPResponse'"
+					},
+					{
+						"name": "Event: 'secureConnect'"
+					},
+					{
+						"name": "Event: 'session'"
+					},
+					{
+						"name": "tlsSocket.address()"
+					},
+					{
+						"name": "tlsSocket.authorizationError"
+					},
+					{
+						"name": "tlsSocket.authorized"
+					},
+					{
+						"name": "tlsSocket.disableRenegotiation()"
+					},
+					{
+						"name": "tlsSocket.encrypted"
+					},
+					{
+						"name": "tlsSocket.getCertificate()"
+					},
+					{
+						"name": "tlsSocket.getCipher()"
+					},
+					{
+						"name": "tlsSocket.getEphemeralKeyInfo()"
+					},
+					{
+						"name": "tlsSocket.getFinished()"
+					},
+					{
+						"name": "tlsSocket.getPeerCertificate([detailed])",
+						"subitems": [
+							{
+								"name": "Certificate Object"
+							}
+						]
+					},
+					{
+						"name": "tlsSocket.getPeerFinished()"
+					},
+					{
+						"name": "tlsSocket.getProtocol()"
+					},
+					{
+						"name": "tlsSocket.getSession()"
+					},
+					{
+						"name": "tlsSocket.getTLSTicket()"
+					},
+					{
+						"name": "tlsSocket.isSessionReused()"
+					},
+					{
+						"name": "tlsSocket.localAddress"
+					},
+					{
+						"name": "tlsSocket.localPort"
+					},
+					{
+						"name": "tlsSocket.remoteAddress"
+					},
+					{
+						"name": "tlsSocket.remoteFamily"
+					},
+					{
+						"name": "tlsSocket.remotePort"
+					},
+					{
+						"name": "tlsSocket.renegotiate(options, callback)"
+					},
+					{
+						"name": "tlsSocket.setMaxSendFragment(size)"
+					}
+				]
+			},
+			{
+				"name": "tls.checkServerIdentity(hostname, cert)"
+			},
+			{
+				"name": "tls.connect(options[, callback])"
+			},
+			{
+				"name": "tls.connect(path[, options][, callback])"
+			},
+			{
+				"name": "tls.connect(port[, host][, options][, callback])"
+			},
+			{
+				"name": "tls.createSecureContext([options])"
+			},
+			{
+				"name": "tls.createServer([options][, secureConnectionListener])"
+			},
+			{
+				"name": "tls.getCiphers()"
+			},
+			{
+				"name": "tls.DEFAULT_ECDH_CURVE"
+			},
+			{
+				"name": "Deprecated APIs",
+				"subitems": [
+					{
+						"name": "Class: CryptoStream",
+						"subitems": [
+							{
+								"name": "cryptoStream.bytesWritten"
+							}
+						]
+					},
+					{
+						"name": "Class: SecurePair",
+						"subitems": [
+							{
+								"name": "Event: 'secure'"
+							}
+						]
+					},
+					{
+						"name": "tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized][, options])"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Trace Events",
+		"subitems": [
+			{
+				"name": "The trace_events module",
+				"subitems": [
+					{
+						"name": "Tracing object",
+						"subitems": [
+							{
+								"name": "tracing.categories"
+							},
+							{
+								"name": "tracing.disable()"
+							},
+							{
+								"name": "tracing.enable()"
+							},
+							{
+								"name": "tracing.enabled"
+							}
+						]
+					},
+					{
+						"name": "trace_events.createTracing(options)"
+					},
+					{
+						"name": "trace_events.getEnabledCategories()"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "TTY",
+		"subitems": [
+			{
+				"name": "Class: tty.ReadStream",
+				"subitems": [
+					{
+						"name": "readStream.isRaw"
+					},
+					{
+						"name": "readStream.isTTY"
+					},
+					{
+						"name": "readStream.setRawMode(mode)"
+					}
+				]
+			},
+			{
+				"name": "Class: tty.WriteStream",
+				"subitems": [
+					{
+						"name": "Event: 'resize'"
+					},
+					{
+						"name": "writeStream.clearLine(dir)"
+					},
+					{
+						"name": "writeStream.clearScreenDown()"
+					},
+					{
+						"name": "writeStream.columns"
+					},
+					{
+						"name": "writeStream.cursorTo(x, y)"
+					},
+					{
+						"name": "writeStream.getColorDepth([env])"
+					},
+					{
+						"name": "writeStream.getWindowSize()"
+					},
+					{
+						"name": "writeStream.hasColors([count][, env])"
+					},
+					{
+						"name": "writeStream.isTTY"
+					},
+					{
+						"name": "writeStream.moveCursor(dx, dy)"
+					},
+					{
+						"name": "writeStream.rows"
+					}
+				]
+			},
+			{
+				"name": "tty.isatty(fd)"
+			}
+		]
+	},
+	{
+		"name": "UDP/Datagram Sockets",
+		"subitems": [
+			{
+				"name": "Class: dgram.Socket",
+				"subitems": [
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'error'"
+					},
+					{
+						"name": "Event: 'listening'"
+					},
+					{
+						"name": "Event: 'message'"
+					},
+					{
+						"name": "socket.addMembership(multicastAddress[, multicastInterface])"
+					},
+					{
+						"name": "socket.address()"
+					},
+					{
+						"name": "socket.bind([port][, address][, callback])"
+					},
+					{
+						"name": "socket.bind(options[, callback])"
+					},
+					{
+						"name": "socket.close([callback])"
+					},
+					{
+						"name": "socket.dropMembership(multicastAddress[, multicastInterface])"
+					},
+					{
+						"name": "socket.getRecvBufferSize()"
+					},
+					{
+						"name": "socket.getSendBufferSize()"
+					},
+					{
+						"name": "socket.ref()"
+					},
+					{
+						"name": "socket.send(msg[, offset, length], port[, address][, callback])"
+					},
+					{
+						"name": "socket.setBroadcast(flag)"
+					},
+					{
+						"name": "socket.setMulticastInterface(multicastInterface)",
+						"subitems": [
+							{
+								"name": "Examples: IPv6 Outgoing Multicast Interface"
+							},
+							{
+								"name": "Example: IPv4 Outgoing Multicast Interface"
+							},
+							{
+								"name": "Call Results"
+							}
+						]
+					},
+					{
+						"name": "socket.setMulticastLoopback(flag)"
+					},
+					{
+						"name": "socket.setMulticastTTL(ttl)"
+					},
+					{
+						"name": "socket.setRecvBufferSize(size)"
+					},
+					{
+						"name": "socket.setSendBufferSize(size)"
+					},
+					{
+						"name": "socket.setTTL(ttl)"
+					},
+					{
+						"name": "socket.unref()"
+					},
+					{
+						"name": "Change to asynchronous socket.bind() behavior"
+					}
+				]
+			},
+			{
+				"name": "dgram module functions",
+				"subitems": [
+					{
+						"name": "dgram.createSocket(options[, callback])"
+					},
+					{
+						"name": "dgram.createSocket(type[, callback])"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "URL",
+		"subitems": [
+			{
+				"name": "URL Strings and URL Objects"
+			},
+			{
+				"name": "The WHATWG URL API",
+				"subitems": [
+					{
+						"name": "Class: URL",
+						"subitems": [
+							{
+								"name": "Constructor: new URL(input[, base])"
+							},
+							{
+								"name": "url.hash"
+							},
+							{
+								"name": "url.host"
+							},
+							{
+								"name": "url.hostname"
+							},
+							{
+								"name": "url.href"
+							},
+							{
+								"name": "url.origin"
+							},
+							{
+								"name": "url.password"
+							},
+							{
+								"name": "url.pathname"
+							},
+							{
+								"name": "url.port"
+							},
+							{
+								"name": "url.protocol",
+								"subitems": [
+									{
+										"name": "Special Schemes"
+									}
+								]
+							},
+							{
+								"name": "url.search"
+							},
+							{
+								"name": "url.searchParams"
+							},
+							{
+								"name": "url.username"
+							},
+							{
+								"name": "url.toString()"
+							},
+							{
+								"name": "url.toJSON()"
+							}
+						]
+					},
+					{
+						"name": "Class: URLSearchParams",
+						"subitems": [
+							{
+								"name": "Constructor: new URLSearchParams()"
+							},
+							{
+								"name": "Constructor: new URLSearchParams(string)"
+							},
+							{
+								"name": "Constructor: new URLSearchParams(obj)"
+							},
+							{
+								"name": "Constructor: new URLSearchParams(iterable)"
+							},
+							{
+								"name": "urlSearchParams.append(name, value)"
+							},
+							{
+								"name": "urlSearchParams.delete(name)"
+							},
+							{
+								"name": "urlSearchParams.entries()"
+							},
+							{
+								"name": "urlSearchParams.forEach(fn[, thisArg])"
+							},
+							{
+								"name": "urlSearchParams.get(name)"
+							},
+							{
+								"name": "urlSearchParams.getAll(name)"
+							},
+							{
+								"name": "urlSearchParams.has(name)"
+							},
+							{
+								"name": "urlSearchParams.keys()"
+							},
+							{
+								"name": "urlSearchParams.set(name, value)"
+							},
+							{
+								"name": "urlSearchParams.sort()"
+							},
+							{
+								"name": "urlSearchParams.toString()"
+							},
+							{
+								"name": "urlSearchParams.values()"
+							},
+							{
+								"name": "urlSearchParams[Symbol.iterator]()"
+							}
+						]
+					},
+					{
+						"name": "url.domainToASCII(domain)"
+					},
+					{
+						"name": "url.domainToUnicode(domain)"
+					},
+					{
+						"name": "url.fileURLToPath(url)"
+					},
+					{
+						"name": "url.format(URL[, options])"
+					},
+					{
+						"name": "url.pathToFileURL(path)"
+					}
+				]
+			},
+			{
+				"name": "Legacy URL API",
+				"subitems": [
+					{
+						"name": "Legacy urlObject",
+						"subitems": [
+							{
+								"name": "urlObject.auth"
+							},
+							{
+								"name": "urlObject.hash"
+							},
+							{
+								"name": "urlObject.host"
+							},
+							{
+								"name": "urlObject.hostname"
+							},
+							{
+								"name": "urlObject.href"
+							},
+							{
+								"name": "urlObject.path"
+							},
+							{
+								"name": "urlObject.pathname"
+							},
+							{
+								"name": "urlObject.port"
+							},
+							{
+								"name": "urlObject.protocol"
+							},
+							{
+								"name": "urlObject.query"
+							},
+							{
+								"name": "urlObject.search"
+							},
+							{
+								"name": "urlObject.slashes"
+							}
+						]
+					},
+					{
+						"name": "url.format(urlObject)"
+					},
+					{
+						"name": "url.parse(urlString[, parseQueryString[, slashesDenoteHost]])"
+					},
+					{
+						"name": "url.resolve(from, to)"
+					}
+				]
+			},
+			{
+				"name": "Percent-Encoding in URLs",
+				"subitems": [
+					{
+						"name": "Legacy API"
+					},
+					{
+						"name": "WHATWG API"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Util",
+		"subitems": [
+			{
+				"name": "util.callbackify(original)"
+			},
+			{
+				"name": "util.debuglog(section)"
+			},
+			{
+				"name": "util.deprecate(fn, msg[, code])"
+			},
+			{
+				"name": "util.format(format[, ...args])"
+			},
+			{
+				"name": "util.formatWithOptions(inspectOptions, format[, ...args])"
+			},
+			{
+				"name": "util.getSystemErrorName(err)"
+			},
+			{
+				"name": "util.inherits(constructor, superConstructor)"
+			},
+			{
+				"name": "util.inspect(object[, options])"
+			},
+			{
+				"name": "util.inspect(object[, showHidden[, depth[, colors]]])",
+				"subitems": [
+					{
+						"name": "Customizing util.inspect colors"
+					},
+					{
+						"name": "Custom inspection functions on Objects"
+					},
+					{
+						"name": "util.inspect.custom"
+					},
+					{
+						"name": "util.inspect.defaultOptions"
+					}
+				]
+			},
+			{
+				"name": "util.isDeepStrictEqual(val1, val2)"
+			},
+			{
+				"name": "util.promisify(original)",
+				"subitems": [
+					{
+						"name": "Custom promisified functions"
+					},
+					{
+						"name": "util.promisify.custom"
+					}
+				]
+			},
+			{
+				"name": "Class: util.TextDecoder",
+				"subitems": [
+					{
+						"name": "WHATWG Supported Encodings",
+						"subitems": [
+							{
+								"name": "Encodings Supported Without ICU"
+							},
+							{
+								"name": "Encodings Supported by Default (With ICU)"
+							},
+							{
+								"name": "Encodings Requiring Full ICU Data"
+							}
+						]
+					},
+					{
+						"name": "new TextDecoder([encoding[, options]])"
+					},
+					{
+						"name": "textDecoder.decode([input[, options]])"
+					},
+					{
+						"name": "textDecoder.encoding"
+					},
+					{
+						"name": "textDecoder.fatal"
+					},
+					{
+						"name": "textDecoder.ignoreBOM"
+					}
+				]
+			},
+			{
+				"name": "Class: util.TextEncoder",
+				"subitems": [
+					{
+						"name": "textEncoder.encode([input])"
+					},
+					{
+						"name": "textEncoder.encoding"
+					}
+				]
+			},
+			{
+				"name": "util.types",
+				"subitems": [
+					{
+						"name": "util.types.isAnyArrayBuffer(value)"
+					},
+					{
+						"name": "util.types.isArgumentsObject(value)"
+					},
+					{
+						"name": "util.types.isArrayBuffer(value)"
+					},
+					{
+						"name": "util.types.isAsyncFunction(value)"
+					},
+					{
+						"name": "util.types.isBigInt64Array(value)"
+					},
+					{
+						"name": "util.types.isBigUint64Array(value)"
+					},
+					{
+						"name": "util.types.isBooleanObject(value)"
+					},
+					{
+						"name": "util.types.isBoxedPrimitive(value)"
+					},
+					{
+						"name": "util.types.isDataView(value)"
+					},
+					{
+						"name": "util.types.isDate(value)"
+					},
+					{
+						"name": "util.types.isExternal(value)"
+					},
+					{
+						"name": "util.types.isFloat32Array(value)"
+					},
+					{
+						"name": "util.types.isFloat64Array(value)"
+					},
+					{
+						"name": "util.types.isGeneratorFunction(value)"
+					},
+					{
+						"name": "util.types.isGeneratorObject(value)"
+					},
+					{
+						"name": "util.types.isInt8Array(value)"
+					},
+					{
+						"name": "util.types.isInt16Array(value)"
+					},
+					{
+						"name": "util.types.isInt32Array(value)"
+					},
+					{
+						"name": "util.types.isMap(value)"
+					},
+					{
+						"name": "util.types.isMapIterator(value)"
+					},
+					{
+						"name": "util.types.isModuleNamespaceObject(value)"
+					},
+					{
+						"name": "util.types.isNativeError(value)"
+					},
+					{
+						"name": "util.types.isNumberObject(value)"
+					},
+					{
+						"name": "util.types.isPromise(value)"
+					},
+					{
+						"name": "util.types.isProxy(value)"
+					},
+					{
+						"name": "util.types.isRegExp(value)"
+					},
+					{
+						"name": "util.types.isSet(value)"
+					},
+					{
+						"name": "util.types.isSetIterator(value)"
+					},
+					{
+						"name": "util.types.isSharedArrayBuffer(value)"
+					},
+					{
+						"name": "util.types.isStringObject(value)"
+					},
+					{
+						"name": "util.types.isSymbolObject(value)"
+					},
+					{
+						"name": "util.types.isTypedArray(value)"
+					},
+					{
+						"name": "util.types.isUint8Array(value)"
+					},
+					{
+						"name": "util.types.isUint8ClampedArray(value)"
+					},
+					{
+						"name": "util.types.isUint16Array(value)"
+					},
+					{
+						"name": "util.types.isUint32Array(value)"
+					},
+					{
+						"name": "util.types.isWeakMap(value)"
+					},
+					{
+						"name": "util.types.isWeakSet(value)"
+					},
+					{
+						"name": "util.types.isWebAssemblyCompiledModule(value)"
+					}
+				]
+			},
+			{
+				"name": "Deprecated APIs",
+				"subitems": [
+					{
+						"name": "util._extend(target, source)"
+					},
+					{
+						"name": "util.debug(string)"
+					},
+					{
+						"name": "util.error([...strings])"
+					},
+					{
+						"name": "util.isArray(object)"
+					},
+					{
+						"name": "util.isBoolean(object)"
+					},
+					{
+						"name": "util.isBuffer(object)"
+					},
+					{
+						"name": "util.isDate(object)"
+					},
+					{
+						"name": "util.isError(object)"
+					},
+					{
+						"name": "util.isFunction(object)"
+					},
+					{
+						"name": "util.isNull(object)"
+					},
+					{
+						"name": "util.isNullOrUndefined(object)"
+					},
+					{
+						"name": "util.isNumber(object)"
+					},
+					{
+						"name": "util.isObject(object)"
+					},
+					{
+						"name": "util.isPrimitive(object)"
+					},
+					{
+						"name": "util.isRegExp(object)"
+					},
+					{
+						"name": "util.isString(object)"
+					},
+					{
+						"name": "util.isSymbol(object)"
+					},
+					{
+						"name": "util.isUndefined(object)"
+					},
+					{
+						"name": "util.log(string)"
+					},
+					{
+						"name": "util.print([...strings])"
+					},
+					{
+						"name": "util.puts([...strings])"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "V8",
+		"subitems": [
+			{
+				"name": "v8.cachedDataVersionTag()"
+			},
+			{
+				"name": "v8.getHeapSpaceStatistics()"
+			},
+			{
+				"name": "v8.getHeapSnapshot()"
+			},
+			{
+				"name": "v8.getHeapStatistics()"
+			},
+			{
+				"name": "v8.setFlagsFromString(flags)"
+			},
+			{
+				"name": "v8.writeHeapSnapshot([filename])"
+			},
+			{
+				"name": "Serialization API",
+				"subitems": [
+					{
+						"name": "v8.serialize(value)"
+					},
+					{
+						"name": "v8.deserialize(buffer)"
+					},
+					{
+						"name": "class: v8.Serializer",
+						"subitems": [
+							{
+								"name": "new Serializer()"
+							},
+							{
+								"name": "serializer.writeHeader()"
+							},
+							{
+								"name": "serializer.writeValue(value)"
+							},
+							{
+								"name": "serializer.releaseBuffer()"
+							},
+							{
+								"name": "serializer.transferArrayBuffer(id, arrayBuffer)"
+							},
+							{
+								"name": "serializer.writeUint32(value)"
+							},
+							{
+								"name": "serializer.writeUint64(hi, lo)"
+							},
+							{
+								"name": "serializer.writeDouble(value)"
+							},
+							{
+								"name": "serializer.writeRawBytes(buffer)"
+							},
+							{
+								"name": "serializer._writeHostObject(object)"
+							},
+							{
+								"name": "serializer._getDataCloneError(message)"
+							},
+							{
+								"name": "serializer._getSharedArrayBufferId(sharedArrayBuffer)"
+							},
+							{
+								"name": "serializer._setTreatArrayBufferViewsAsHostObjects(flag)"
+							}
+						]
+					},
+					{
+						"name": "class: v8.Deserializer",
+						"subitems": [
+							{
+								"name": "new Deserializer(buffer)"
+							},
+							{
+								"name": "deserializer.readHeader()"
+							},
+							{
+								"name": "deserializer.readValue()"
+							},
+							{
+								"name": "deserializer.transferArrayBuffer(id, arrayBuffer)"
+							},
+							{
+								"name": "deserializer.getWireFormatVersion()"
+							},
+							{
+								"name": "deserializer.readUint32()"
+							},
+							{
+								"name": "deserializer.readUint64()"
+							},
+							{
+								"name": "deserializer.readDouble()"
+							},
+							{
+								"name": "deserializer.readRawBytes(length)"
+							},
+							{
+								"name": "deserializer._readHostObject()"
+							}
+						]
+					},
+					{
+						"name": "class: v8.DefaultSerializer"
+					},
+					{
+						"name": "class: v8.DefaultDeserializer"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "VM (Executing JavaScript)",
+		"subitems": [
+			{
+				"name": "Class: vm.Script",
+				"subitems": [
+					{
+						"name": "Constructor: new vm.Script(code[, options])"
+					},
+					{
+						"name": "script.createCachedData()"
+					},
+					{
+						"name": "script.runInContext(contextifiedSandbox[, options])"
+					},
+					{
+						"name": "script.runInNewContext([sandbox[, options]])"
+					},
+					{
+						"name": "script.runInThisContext([options])"
+					}
+				]
+			},
+			{
+				"name": "Class: vm.SourceTextModule",
+				"subitems": [
+					{
+						"name": "Constructor: new vm.SourceTextModule(code[, options])"
+					},
+					{
+						"name": "module.dependencySpecifiers"
+					},
+					{
+						"name": "module.error"
+					},
+					{
+						"name": "module.evaluate([options])"
+					},
+					{
+						"name": "module.instantiate()"
+					},
+					{
+						"name": "module.link(linker)"
+					},
+					{
+						"name": "module.linkingStatus"
+					},
+					{
+						"name": "module.namespace"
+					},
+					{
+						"name": "module.status"
+					},
+					{
+						"name": "module.url"
+					}
+				]
+			},
+			{
+				"name": "vm.compileFunction(code[, params[, options]])"
+			},
+			{
+				"name": "vm.createContext([sandbox[, options]])"
+			},
+			{
+				"name": "vm.isContext(sandbox)"
+			},
+			{
+				"name": "vm.runInContext(code, contextifiedSandbox[, options])"
+			},
+			{
+				"name": "vm.runInNewContext(code[, sandbox[, options]])"
+			},
+			{
+				"name": "vm.runInThisContext(code[, options])"
+			},
+			{
+				"name": "Example: Running an HTTP Server within a VM"
+			},
+			{
+				"name": "What does it mean to \"contextify\" an object?"
+			},
+			{
+				"name": "Timeout limitations when using process.nextTick(), Promises, and queueMicrotask()"
+			}
+		]
+	},
+	{
+		"name": "Worker Threads",
+		"subitems": [
+			{
+				"name": "worker.isMainThread"
+			},
+			{
+				"name": "worker.moveMessagePortToContext(port, contextifiedSandbox)"
+			},
+			{
+				"name": "worker.parentPort"
+			},
+			{
+				"name": "worker.threadId"
+			},
+			{
+				"name": "worker.workerData"
+			},
+			{
+				"name": "Class: MessageChannel"
+			},
+			{
+				"name": "Class: MessagePort",
+				"subitems": [
+					{
+						"name": "Event: 'close'"
+					},
+					{
+						"name": "Event: 'message'"
+					},
+					{
+						"name": "port.close()"
+					},
+					{
+						"name": "port.postMessage(value[, transferList])"
+					},
+					{
+						"name": "port.ref()"
+					},
+					{
+						"name": "port.start()"
+					},
+					{
+						"name": "port.unref()"
+					}
+				]
+			},
+			{
+				"name": "Class: Worker",
+				"subitems": [
+					{
+						"name": "new Worker(filename[, options])"
+					},
+					{
+						"name": "Event: 'error'"
+					},
+					{
+						"name": "Event: 'exit'"
+					},
+					{
+						"name": "Event: 'message'"
+					},
+					{
+						"name": "Event: 'online'"
+					},
+					{
+						"name": "worker.postMessage(value[, transferList])"
+					},
+					{
+						"name": "worker.ref()"
+					},
+					{
+						"name": "worker.stderr"
+					},
+					{
+						"name": "worker.stdin"
+					},
+					{
+						"name": "worker.stdout"
+					},
+					{
+						"name": "worker.terminate([callback])"
+					},
+					{
+						"name": "worker.threadId"
+					},
+					{
+						"name": "worker.unref()"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Zlib",
+		"subitems": [
+			{
+				"name": "Threadpool Usage"
+			},
+			{
+				"name": "Compressing HTTP requests and responses"
+			},
+			{
+				"name": "Memory Usage Tuning",
+				"subitems": [
+					{
+						"name": "For zlib-based streams"
+					},
+					{
+						"name": "For Brotli-based streams"
+					}
+				]
+			},
+			{
+				"name": "Flushing"
+			},
+			{
+				"name": "Constants",
+				"subitems": [
+					{
+						"name": "zlib constants"
+					},
+					{
+						"name": "Brotli constants",
+						"subitems": [
+							{
+								"name": "Flush operations"
+							},
+							{
+								"name": "Compressor options"
+							},
+							{
+								"name": "Decompressor options"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Class: Options"
+			},
+			{
+				"name": "Class: BrotliOptions"
+			},
+			{
+				"name": "Class: zlib.BrotliCompress"
+			},
+			{
+				"name": "Class: zlib.BrotliDecompress"
+			},
+			{
+				"name": "Class: zlib.Deflate"
+			},
+			{
+				"name": "Class: zlib.DeflateRaw"
+			},
+			{
+				"name": "Class: zlib.Gunzip"
+			},
+			{
+				"name": "Class: zlib.Gzip"
+			},
+			{
+				"name": "Class: zlib.Inflate"
+			},
+			{
+				"name": "Class: zlib.InflateRaw"
+			},
+			{
+				"name": "Class: zlib.Unzip"
+			},
+			{
+				"name": "Class: zlib.ZlibBase",
+				"subitems": [
+					{
+						"name": "zlib.bytesRead"
+					},
+					{
+						"name": "zlib.bytesWritten"
+					},
+					{
+						"name": "zlib.close([callback])"
+					},
+					{
+						"name": "zlib.flush([kind, ]callback)"
+					},
+					{
+						"name": "zlib.params(level, strategy, callback)"
+					},
+					{
+						"name": "zlib.reset()"
+					}
+				]
+			},
+			{
+				"name": "zlib.constants"
+			},
+			{
+				"name": "zlib.createBrotliCompress([options])"
+			},
+			{
+				"name": "zlib.createBrotliDecompress([options])"
+			},
+			{
+				"name": "zlib.createDeflate([options])"
+			},
+			{
+				"name": "zlib.createDeflateRaw([options])"
+			},
+			{
+				"name": "zlib.createGunzip([options])"
+			},
+			{
+				"name": "zlib.createGzip([options])"
+			},
+			{
+				"name": "zlib.createInflate([options])"
+			},
+			{
+				"name": "zlib.createInflateRaw([options])"
+			},
+			{
+				"name": "zlib.createUnzip([options])"
+			},
+			{
+				"name": "Convenience Methods",
+				"subitems": [
+					{
+						"name": "zlib.brotliCompress(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.brotliCompressSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.brotliDecompress(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.brotliDecompressSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.deflate(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.deflateSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.deflateRaw(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.deflateRawSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.gunzip(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.gunzipSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.gzip(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.gzipSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.inflate(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.inflateSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.inflateRaw(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.inflateRawSync(buffer[, options])"
+					},
+					{
+						"name": "zlib.unzip(buffer[, options], callback)"
+					},
+					{
+						"name": "zlib.unzipSync(buffer[, options])"
+					}
+				]
+			}
+		]
+	}
+]
